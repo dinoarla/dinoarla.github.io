@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Electrical Engineer at <a href='https://web.pln.co.id/en/about-us/company-profile'>PLN</a>. Graduate student of <a href='https://www.its.ac.id/simt/en/home-2/'>MMT ITS</a>. Machine Learning & AI Enthusiast. Web Developer.
 
 profile:
   align: right
@@ -11,7 +11,7 @@ profile:
   more_info: 
 
 news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
