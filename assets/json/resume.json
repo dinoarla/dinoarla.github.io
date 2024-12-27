@@ -1,24 +1,24 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
-    "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "name": "Dino Arla",
+    "label": "",
+    "image": "img/prof_pic.jpg",
+    "email": "halo@dinoarla.com",
+    "phone": "+628 1313 458 656",
+    "Website": "https://dinoarla.com",
+    "summary": "",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "Soekarno Hatta St",
+      "postalCode": "ID 45216",
+      "city": "Indramayu",
+      "countryCode": "ID",
+      "region": "West Java"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "LinkedIn",
+        "username": "DinoArla",
+        "url": "https://linkedin.com/dino-arla"
       }
     ]
   },
@@ -30,7 +30,7 @@
       "startDate": "1933-01-01",
       "endDate": "1955-01-01",
       "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "highlights": ["Relativity","xxxxx"]
     }
   ],
   "volunteer": [
