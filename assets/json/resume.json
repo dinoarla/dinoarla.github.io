@@ -30,8 +30,14 @@
       "url": "https://example.com",
       "startDate": "2013-07-01",
       "endDate": "2015-04-30",
-      "summary": "Maintain Control Room Operational of Siantan Diesel Power Plant",
-      "highlights": ["Diesel Engine","Power Plant"]
+      "summary": "Conduct operational control of power generation units, inspect and address disturbances (first-line maintenance), and perform performance tests on power plant installations to ensure operational reliability.",
+      "highlights": [
+        "Synchronize and disconnect units as requested, maintain operational log sheets and kWh records for energy transfer purposes.",
+"Monitor anomalies or disturbances in power plant installations and prepare operational and equipment damage reports.",
+"Perform performance tests on power plant installations according to established SOPs to ensure operational reliability.",
+"Address disturbances in power generation units to restore normal functionality (first-line maintenance).",
+"Adhere to standards for Quality Management Systems (QMS), Environmental Management Systems (EMS), Occupational Health and Safety (OHS) for quality, safety, and sustainability."
+      ]
     },
     {
       "name": "PT PLN (Persero), Power Plant Sector of Kapuas, Regional West Kalimantan",
@@ -40,8 +46,15 @@
       "url": "https://example.com",
       "startDate": "2015-05-01",
       "endDate": "2017-12-31",
-      "summary": "Planning and Control of Power Plant Maintenance",
-      "highlights": ["Diesel Engine","Power Plant"]
+      "summary": "Plan and evaluate power generation operations with a focus on effectiveness, efficiency and ensuring high reliability.",
+      "highlights": [
+        "Plan and control Work Orders (WO) in accordance with the Work Plane Control (WPC).",
+"Plan and prepare resource needs, including materials, tools, manpower (Resource Planning), and schedule the execution of Work Orders.",
+"Review, improve, and update preventive maintenance schedules/scopes and follow up on engineering recommendations.",
+"Evaluate maintenance history data for equipment and compile maintenance history statistics (MTBF, MTTR).",
+"Measure and periodically evaluate key maintenance indicators/Maintenance Mix (number of WOs, man-hours, and costs).",
+"Execute and manage outage management effectively."
+      ]
     },
     {
       "name": "PT PLN (Persero), Power Plant Sector of Kapuas, Regional Kalimantan",
@@ -50,33 +63,47 @@
       "url": "https://example.com",
       "startDate": "2018-01-01",
       "endDate": "2018-12-31",
-      "summary": "Engineer Technology and Information",
-      "highlights": ["Diesel Engine","Power Plant"]
+      "summary": "Planning, implementing, and evaluating the maintenance activities of information technology infrastructure and facilities to support the reliability of power generation.",
+      "highlights": [
+        "Supervising and implementing the use of the CMMS program by ensuring the program is ready for use and that employees utilizing the program can operate it as expected.",
+"Supervising the execution of maintenance and repair of information technology infrastructure.",
+"Conducting maintenance of information data and information security systems to ensure the protection of information technology infrastructure.",
+"Providing IT services to all users."
+      ]
     },
     {
       "name": "PT PLN (Persero), Area Indramayu, Distribution Unit of West Java",
       "location": "Indramayu, Indonesia",
-      "position": "Assistant Engineer of Meter Maintenance and Transaction",
+      "position": "Assistant Engineer for Transaction Meter Maintenance",
       "url": "https://example.com",
       "startDate": "2019-01-01",
       "endDate": "2021-12-31",
-      "summary": "Responsible for Meter Transaction Maintenance Implementation for Measurement Accuracy",
-      "highlights": ["Meter Transactions Maintenance caused by faulty meters, opaque, jams and old.",
-                      "Automatic Meter Reading (AMR) installation and maintenance periodically.",
-                    "Sampling Tests Metrology Calibration results periodically.",
-                    "Maintenance and re-Calibration KWh Meter, Electronic Meter and AMR systems which are done by third party.",
-                    "Testing of the new or used material metering device." 
+      "summary": "Responsible for the implementation of transaction meter maintenance to ensure the accuracy of electricity consumption measurement.",
+      "highlights": [
+        "Carrying out transaction meter maintenance due to faulty, opaque, jammed, or outdated meters.",
+"Conducting periodic installation and maintenance of Automatic Meter Reading (AMR).",
+"Preparing the necessary kWh meters for maintenance.",
+"Performing periodic sampling and testing of metrological calibration results.",
+"Carrying out maintenance and recalibration of kWh meter and Electronic Meters (ME), as well as AMR systems handled by third parties.",
+"Performing testing of measuring instruments, limiters, and their components for new or reliable used materials."
                   ]
     },
     {
       "name": "PT PLN (Persero), Area Indramayu, Distribution Unit of West Java",
       "location": "Indramayu, Indonesia",
-      "position": "Assistant Analyst of Customer Mapping and Electrical Network Systems",
+      "position": "Assistant Analyst for Electrical Network and Customer Data Mapping",
       "url": "https://example.com",
       "startDate": "2022-01-01",
       "endDate": "2023-01-31",
-      "summary": "Responsible for data analysis, mapping assets based on GIS and maximo, Enterprise Assets Management (EAM) and data management of electrical network in terms of Planning Division",
-      "highlights": ["EAM"]
+      "summary": "Responsible for inventorying and updating asset data, both spatial and textual, as well as managing, controlling, and evaluating the implementation of operations and maintenance tasks.",
+      "highlights": [
+        "Monitoring and evaluating the physical realization of distribution asset changes.",
+"Developing plans for the management of distribution asset data and its mapping.",
+"Validating existing distribution asset data (Medium Voltage Network along with communication facilities and automation, Distribution Substations, Low Voltage Network, and Customers based on GIS/Maximo/e-mapping).",
+"Ensuring that every asset change is recorded in the asset data.",
+"Coordinating the socialization and supervision of Enterprise Asset Management (EAM).",
+"Evaluating the implementation of the Network Master Data roadmap."
+      ]
     },
     {
       "name": "PT PLN (Persero), Area Indramayu, Distribution Unit of West Java",
@@ -85,7 +112,7 @@
       "url": "https://example.com",
       "startDate": "2023-02-01",
       "endDate": "2025-12-31",
-      "summary": "Responsible for data analysis, mapping assets based on GIS and maximo, Enterprise Assets Management (EAM) and data management of electrical network in terms of Planning Division",
+      "summary": "Responsible for billing management, energy loss recovery, and electricity energy settlement activities to meet the applicable operational standards.",
       "highlights": ["TE"]
     }
   ],
