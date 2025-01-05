@@ -24,8 +24,8 @@
   },
   "work": [
     {
-      "name": "PT PLN (Persero), Power Plant Sector of Kapuas, Regional West Kalimantan",
-      "location": "West Kalimantan, Indonesia",
+      "name": "PT PLN (Persero), Diesel of Power Plant Siantan, Regional West Kalimantan",
+      "location": "Pontianak, Indonesia",
       "position": "Junior Operator Control Room",
       "url": "https://example.com",
       "startDate": "2013-07-01",
@@ -35,17 +35,17 @@
     },
     {
       "name": "PT PLN (Persero), Power Plant Sector of Kapuas, Regional West Kalimantan",
-      "location": "West Kalimantan, Indonesia",
+      "location": "Kubu Raya, Indonesia",
       "position": "Junior Technician Planning and Control of Power Plant Maintenance",
       "url": "https://example.com",
-      "startDate": "2013-05-01",
+      "startDate": "2015-05-01",
       "endDate": "2017-12-31",
       "summary": "Planning and Control of Power Plant Maintenance",
       "highlights": ["Diesel Engine","Power Plant"]
     },
     {
       "name": "PT PLN (Persero), Power Plant Sector of Kapuas, Regional Kalimantan",
-      "location": "West Kalimantan, Indonesia",
+      "location": "Kubu Raya, Indonesia",
       "position": "Junior Engineer Technology and Information",
       "url": "https://example.com",
       "startDate": "2018-01-01",
@@ -54,8 +54,8 @@
       "highlights": ["Diesel Engine","Power Plant"]
     },
     {
-      "name": "PT PLN (Persero), UP3 Indramayu, Distribution Unit of West Java",
-      "location": "West Java, Indonesia",
+      "name": "PT PLN (Persero), Area Indramayu, Distribution Unit of West Java",
+      "location": "Indramayu, Indonesia",
       "position": "Assistant Engineer of Meter Maintenance and Transaction",
       "url": "https://example.com",
       "startDate": "2019-01-01",
@@ -69,8 +69,8 @@
                   ]
     },
     {
-      "name": "PT PLN (Persero), UP3 Indramayu, Distribution Unit of West Java",
-      "location": "West Java, Indonesia",
+      "name": "PT PLN (Persero), Area Indramayu, Distribution Unit of West Java",
+      "location": "Indramayu, Indonesia",
       "position": "Assistant Analyst of Customer Mapping and Electrical Network Systems",
       "url": "https://example.com",
       "startDate": "2022-01-01",
@@ -79,8 +79,8 @@
       "highlights": ["EAM"]
     },
     {
-      "name": "PT PLN (Persero), UP3 Indramayu, Distribution Unit of West Java",
-      "location": "West Java, Indonesia",
+      "name": "PT PLN (Persero), Area Indramayu, Distribution Unit of West Java",
+      "location": "Indramayu, Indonesia",
       "position": "Team Leader of Energy Transaction",
       "url": "https://example.com",
       "startDate": "2023-02-01",
