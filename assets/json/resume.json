@@ -2,7 +2,7 @@
   "basics": {
     "name": "Dino Arla",
     "label": "",
-    "image": "img/prof_pic.jpg",
+    "image": "",
     "email": "halo@dinoarla.com",
     "phone": "+628 1313 458 656",
     "website": "https://dinoarla.com",
@@ -112,8 +112,20 @@
       "url": "https://example.com",
       "startDate": "2023-02-01",
       "endDate": "2025-12-31",
-      "summary": "Responsible for billing management, energy loss recovery, and electricity energy settlement activities to meet the applicable operational standards.",
-      "highlights": ["TE"]
+      "summary": "Responsible for the management of measuring and limiting devices, energy loss recovery and control, public street lighting, customer connection services, as well as electricity energy settlement activities to meet the applicable operational standards.",
+      "highlights": [
+        "Managing the functions of postpaid and prepaid kWh meter reading as well as electricity bill preparation and issuance.",
+"Managing the completeness of customer data for both postpaid and prepaid systems.",
+"Overseeing the inspection and maintenance of measuring and limiting devices (MLD) and their accessories, including those for customers utilizing AMR (Automatic Meter Reading).",
+"Organizing and managing the control processes for non-technical energy losses, such as P2TL (Electricity Theft Prevention Program), meter maintenance, billing processes, and the regulation and inventory of public street lighting (PSL).",
+"Verifying the validity and completeness of measuring and limiting devices (MLD), including seals, for activities such as new installations, capacity changes, temporary lighting, reconnections, and disconnections of service and MLD.",
+"Managing MLD materials for maintenance activities and controlling returned materials.",
+"Managing every point of electricity transaction (monthly loss prediction and calculation), including substations, kWh export-import, and customer transactions.",
+"Updating RBM (Meter Reading Route) for both postpaid and prepaid customers on a monthly basis.",
+"Guiding and developing human resource competencies through coaching, mentoring, and counseling to meet job competency requirements.",
+"Managing work programs under the scope of the role in alignment with good corporate governance (GCG), risk policies, compliance policies, K3L (Occupational Health, Safety, and Environment) policies, and the integrated management system implemented in the work unit.",
+"Carrying out assignments or tasks given by superiors (within the scope of office duties) aimed at improving performance, enhancing brand image, and creating value."
+      ]
     }
   ],
   "education": [
@@ -216,67 +228,21 @@
       "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
     }
   ],
-  "skills": [
-    {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
   "languages": [
     {
-      "language": "German",
-      "fluency": "Native speaker",
+      "language": "Bahasa",
+      "fluency": "Native or bilingual proficiency",
       "icon": ""
     },
     {
       "language": "English",
-      "fluency": "Fluent",
+      "fluency": "Professional working proficiency",
       "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
     },
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
-  "projects": [
-    {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "language": "Arabic",
+      "fluency": "Elementary proficiency",
+      "icon": ""
     }
   ]
 }
