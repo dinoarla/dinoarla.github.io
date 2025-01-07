@@ -154,11 +154,53 @@
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "2nd Winner of Innovation Contest in Knowledge Management Festival 2017",
+      "date": "2017-03-14",
+      "awarder": "PLN Regional West Kalimantan",
+      "url": "#",
+      "summary": "Innovation contest associated with Junior Technician Planning and Control of Power Plant Maintenance"
+    },
+    {
+      "title": "The Fastest Graduate",
+      "date": "2017-06-20",
+      "awarder": "Universitas Tanjungpura",
+      "url": "#",
+      "summary": "Academic level"
+    },
+    {
+      "title": "4th Winner of Innovation Contest 2017",
+      "date": "2017-07-13",
+      "awarder": "PLN Research and Development Centre",
+      "url": "#",
+      "summary": "Regional selection at Denpasar, Bali. Innovation contest associated with Junior Technician Planning and Control of Power Plant Maintenance"
+    },
+    {
+      "title": "1st Winner of Innovation Contest 2022",
+      "date": "2022-05-20",
+      "awarder": "PLN Distribution Unit of West Java",
+      "url": "#",
+      "summary": "Innovation contest associated with Assistant Analyst for Electrical Network and Customer Data Mapping"
+    },
+    {
+      "title": "1st Winner of Innovation Contest 2024",
+      "date": "2024-06-12",
+      "awarder": "PLN Distribution Unit of West Java",
+      "url": "#",
+      "summary": "Innovation contest associated with Team Leader of Energy Transaction"
+    },
+    {
+      "title": "Golden Ticket Awardee of Innovation Contest 2024",
+      "date": "2024-08-21",
+      "awarder": "PLN Distribution Unit of West Java",
+      "url": "#",
+      "summary": "Regional selection at Padang, West Sumatera. Innovation contest associated with Team Leader of Energy Transaction"
+    },
+    {
+      "title": "3rd Winner of LIKE 2024",
+      "date": "2024-10-23",
+      "awarder": "PLN Research and Development Centre",
+      "url": "#",
+      "summary": "Grand Final at Jakarta. Innovation contest associated with Team Leader of Energy Transaction"
     }
   ],
   "certificates": [
