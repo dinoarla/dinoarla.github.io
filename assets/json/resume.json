@@ -155,52 +155,96 @@
   "awards": [
     {
       "title": "2nd Winner of Innovation Contest in Knowledge Management Festival 2017",
+      "location": "Kubu Raya, Indonesia",
       "date": "2017-03-14",
       "awarder": "PLN Regional West Kalimantan",
       "url": "#",
-      "summary": "Innovation contest associated with Junior Technician Planning and Control of Power Plant Maintenance"
+      "summary": "Associated with Junior Technician Planning and Control of Power Plant Maintenance"
     },
     {
       "title": "The Fastest Graduate",
+      "location": "Pontianak, Indonesia",
       "date": "2017-06-20",
       "awarder": "Universitas Tanjungpura",
       "url": "#",
-      "summary": "Academic level"
+      "summary": "Associated with Bachelor of Engineering"
     },
     {
       "title": "4th Winner of Innovation Contest 2017",
+      "location": "Bali, Indonesia",
       "date": "2017-07-13",
       "awarder": "PLN Research and Development Centre",
       "url": "#",
-      "summary": "Regional selection at Denpasar, Bali. Innovation contest associated with Junior Technician Planning and Control of Power Plant Maintenance"
+      "summary": "Regional selection at Denpasar, Bali. Associated with Junior Technician Planning and Control of Power Plant Maintenance"
     },
     {
       "title": "1st Winner of Innovation Contest 2022",
+      "location": "Bandung, Indonesia",
       "date": "2022-05-20",
       "awarder": "PLN Distribution Unit of West Java",
       "url": "#",
-      "summary": "Innovation contest associated with Assistant Analyst for Electrical Network and Customer Data Mapping"
+      "summary": "Associated with Assistant Analyst for Electrical Network and Customer Data Mapping"
     },
     {
       "title": "1st Winner of Innovation Contest 2024",
+      "location": "Bandung, Indonesia",
       "date": "2024-06-12",
       "awarder": "PLN Distribution Unit of West Java",
       "url": "#",
-      "summary": "Innovation contest associated with Team Leader of Energy Transaction"
+      "summary": "Associated with Team Leader of Energy Transaction"
     },
     {
       "title": "Golden Ticket Awardee of Innovation Contest 2024",
+      "location": "Padang, Indonesia",
       "date": "2024-08-21",
       "awarder": "PLN Distribution Unit of West Java",
       "url": "#",
-      "summary": "Regional selection at Padang, West Sumatera. Innovation contest associated with Team Leader of Energy Transaction"
+      "summary": "Regional selection at Padang, West Sumatera. Associated with Team Leader of Energy Transaction"
     },
     {
       "title": "3rd Winner of LIKE 2024",
+      "location": "Jakarta, Indonesia",
       "date": "2024-10-23",
       "awarder": "PLN Research and Development Centre",
       "url": "#",
-      "summary": "Grand Final at Jakarta. Innovation contest associated with Team Leader of Energy Transaction"
+      "summary": "Grand Final at Jakarta. Associated with Team Leader of Energy Transaction"
+    }
+  ],
+  "patent": [
+    {
+      "name": "AQORTA (Air Quality and Noise Real Time Data Acquisition) An Integrated Air Quality and Noise Telemetry System with Solar Power System",
+      "location": "Indonesia",
+      "publisher": "ID Patent: P00202112421",
+      "releaseDate": "2023-07-01",
+      "url": "https://www.dgip.go.id/berita-resmi/berita-resmi-paten?lihat=4f6338829c0986d268bbe4bc4e6ad4bc.pdf",
+      "summary": "The AQORTA system invention pertains to the implementation of a telemetry system for air quality and noise monitoring, capable of recording measurement data into a MySQL database and displaying the measurement results through a Graphical User Interface (GUI) in real-time. The system consists of two components: hardware and software. The hardware component is installed at the measurement location and functions to record air quality data (CO, O3, temperature, humidity) and noise levels, transmitting the data to a MySQL database hosted on a web server. The software component is accessible via a website-based GUI and an Android smartphone application, enabling the visualization of measurement data in the form of gauge indicators, graphs, tables, and geolocation data using the Google Maps Application Programming Interface (API). The AQORTA system’s primary power supply relies on solar panels and a 12-volt DC battery regulated by a solar charge controller. The hardware’s energy consumption is 78.49 Wh per day."
+    }
+  ],
+  "book": [
+    {
+      "name": "Inovasi Sistem Pengukuran Kualitas Udara Terintegrasi Solar Power System Berbasis Internet of Things (IoT)",
+      "location": "Indonesia",
+      "publisher": "Penerbit Litnus (PT Literasi Nusantara Abadi Grup)",
+      "releaseDate": "2023-03-01",
+      "url": "https://henbuk.com/inovasi-sistem-pengukuran-kualitas-udara-terintegrasi-solar-power-system-berbasis-internet-of-things-iot-literasi-nusantara-1",
+      "summary": "Permasalahan kualitas udara kerap kali menjadi masalah yang sering terjadi baik di kota-kota besar dan juga pinggiran. Polutan yang berasal dari kendaraan bermotor dan industri yang kemudian dibuang ke lingkungan, pembukaan lahan dengan cara membakar hutan atau belukar akhirnya menjadi perangkap radiasi matahari sehingga mengakibatkan suhu meningkat dan efek iklim mikro menguat. Permasalahan terkait lingkungan dan manusia ini kemudian memerlukan tindakan mitigasi untuk memperkuat sistem informasi kebencanaan khususnya mengenai kualitas udara. Buku ini memaparkan inovasi dari hasil penelitian untuk mengatasi permasalahan tersebut yaitu berupa alat untuk mengukur kualitas udara secara portable berbasis Internet of Things (IoT). Inovasi yang dilakukan adalah alat dapat menampilkan data real time melalui koneksi internet dengan memanfaatkan website dan smartphone android sebagai Graphical User Interface (GUI). Selain itu untuk wilayah pinggiran/rural dipaparkan pula inovasi berupa penggunaan teknologi Long Range (LoRa)."
+    }
+  ],
+  "publications": [
+    {
+      "name": "Anti Theft Power Smart Metering System",
+      "location": "Bali, Indonesia",
+      "publisher": "International Conference on Technology and Policy in Energy and Electric Power (ICTPEP)",
+      "releaseDate": "2024-10-01",
+      "url": "https://ieeexplore.ieee.org/abstract/document/10732892",
+      "summary": "PT PLN (Persero) which has more 89,1 million customer plays important role to distribute electricity to people. Even though PT PLN still has many problems on of which is losses energy in distribution system. Distribution system came from substation to 20KV line to distribution substation and then to kWh meter. Distribution losses can happen in two that is technical losses and non-technical losses. One of many reasons is happened in kWh meter. In PT PLN has two system kWh meter that is postpaid and prepaid. Postpaid still use conventional system that has to be reading physically by custodian and prepaid system use buying token before we use kWh meter. Postpaid system can’t detect theft electricity from customer just using conventional system. With microcontroller, IC power energy watt meter and GSM GPRS module we can build system that detect theft electricity and avoid non-technical distribution losses. The IC power energy meter STPM10 can calculate highly accurately voltage, current, active power, reactive power and frequency of line power. The module can send data to local server in distribution substation and analyze usage of distribution substation deviation with amount of usage kWh in the same distribution system."
+    },
+    {
+      "name": "A Telemetry System for Real-Time Air Quality and Noise Monitoring in Urban Areas Based on IoT Technology",
+      "publisher": "Tuijin Jishu/Journal of Propulsion Technology",
+      "releaseDate": "2023-07-01",
+      "url": "https://www.propulsiontechjournal.com/index.php/journal/article/view/3153",
+      "summary": "Large urban agglomerations inevitably lead to air pollution. The sustainable control and monitoring of air pollution have been lacking in many cities including air quality and noise information was difficult to be accessed by the citizens periodically. This paper aims to design an air quality and noise telemetry systembased on internet communicationwhich can record the measurement data into MySQL database and showing the data through a GUI in real time. The system was developed by using solar panel as a main power supply with Arduino Uno R3 as a microcontroller board, ENC28J60 as an ethernet module and various environmental sensors like MQ7 (CO gas), MQ131 (Ozone gas), KY-038 (Noise), Dust Sensor GP2Y1010AU0F (PM10) and DHT11 (Temperature and Humidity). The system has been tested through an in-field experimentation performed in different areas of Pontianak City. Electrical energy consumption was 78,49Wh in a day. According to the test results, the system could work properly for both hardware and software."
     }
   ],
   "certificates": [
@@ -245,29 +289,6 @@
       "issuer": "Stanford University",
       "url": "https://example.com",
       "icon": "fa-solid fa-clipboard-check"
-    }
-  ],
-  "publications": [
-    {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
     }
   ],
   "languages": [
