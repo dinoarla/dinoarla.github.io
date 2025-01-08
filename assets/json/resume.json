@@ -239,63 +239,175 @@
   ],
   "certificates": [
     {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
+      "name": "Oracle 10G Database Installation",
+      "date": "2014-01-01",
+      "issuer": "PT PLN (Persero)",
+      "url": "#",
       "icon": "fa-solid fa-location-dot"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "name": "Set Up and Implementation of DataGuard on Oracle 10G Database",
+      "date": "2014-02-01",
+      "issuer": "PT PLN (Persero)",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
+      "name": "Operation and Maintenance of Solar Power Plants",
+      "date": "2015-01-01",
+      "issuer": "PT PLN (Persero)",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
     },
     {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
+      "name": "Water Treatment System in Power Plants",
+      "date": "2015-02-01",
+      "issuer": "PT PLN (Persero)",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
     },
     {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
+      "name": "Research Methodology and Writing Preparation",
+      "date": "2015-03-01",
+      "issuer": "PT PLN (Persero)",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
     },
     {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
+      "name": "SAP Material Management",
+      "date": "2017-01-01",
+      "issuer": "PT PLN (Persero)",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Management of Measuring and Limiting Devices",
+      "date": "2020-01-01",
+      "issuer": "PT PLN (Persero)",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Troubleshooting Prepaid Meters and Automatic Meter Reading Systems",
+      "date": "2020-02-01",
+      "issuer": "PT PLN (Persero)",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Automatic Meter Reading",
+      "date": "2021-01-01",
+      "issuer": "PT PLN (Persero)",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Basic Risk Management",
+      "date": "2021-02-01",
+      "issuer": "PT PLN (Persero)",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Communication Protocols on SCADA",
+      "date": "2021-03-01",
+      "issuer": "PT PLN (Persero)",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Basic Fraud Risk Management",
+      "date": "2022-01-01",
+      "issuer": "PT PLN (Persero)",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Electricity Risk Management",
+      "date": "2022-02-01",
+      "issuer": "PT PLN (Persero)",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Outage Management",
+      "date": "2022-03-01",
+      "issuer": "PT PLN (Persero)",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Asset Distribution Mapping with ArcGIS",
+      "date": "2022-04-01",
+      "issuer": "PT PLN (Persero)",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Mobile Application Development",
+      "date": "2022-05-01",
+      "issuer": "PT PLN (Persero)",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Risk-Based Corporate Budget Planning",
+      "date": "2022-06-01",
+      "issuer": "PT PLN (Persero)",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Wiring and Testing of Measuring and Limiting Devices for Low and Medium Voltage",
+      "date": "2022-07-01",
+      "issuer": "PT PLN (Persero)",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Management of Electricity Usage Regulation and Enforcement",
+      "date": "2023-01-01",
+      "issuer": "PT PLN (Persero)",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Indirect Wiring of Measuring and Limiting Devices",
+      "date": "2023-02-01",
+      "issuer": "PT PLN (Persero)",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Complete Web Design: From Figma to Webflow to Freelancing",
+      "date": "2024-01-01",
+      "issuer": "Udemy",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Ionic 3 - Learn How to Design Ionic Apps",
+      "date": "2024-02-01",
+      "issuer": "Udemy",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
     }
   ],
   "languages": [
     {
       "language": "Bahasa",
       "fluency": "Native or bilingual proficiency",
-      "icon": ""
+      "icon": "fa-solid fa-person-dress"
     },
     {
       "language": "English",
       "fluency": "Professional working proficiency",
-      "icon": ""
+      "icon": "fa-solid fa-handshake"
     },
     {
       "language": "Arabic",
       "fluency": "Elementary proficiency",
-      "icon": ""
+      "icon": "fa-solid fa-place-of-worship"
     }
   ]
 }
