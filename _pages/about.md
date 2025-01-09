@@ -21,4 +21,4 @@ Currently pursuing a Master’s degree in Technology Management at the [Institut
 
 Dino’s expertise and innovative mindset have been recognized at the corporate level, earning him the prestigious `Corporate Innovator Award`, a testament to his ability to lead transformative projects that deliver tangible value. As a `Full Stack Web Developer`, he blends his technical acumen with creativity, crafting user-centric solutions that bridge the gap between technology and business needs.
 
-Committed to continuous learning and innovation, Dino stands out as a forward-thinking professional dedicated to advancing technology adoption within the energy sector and beyond.
+Committed to continuous learning and innovation, Dino stands out as a forward-thinking professional dedicated to advancing technology adoption within the energy sector and beyond. Here is the link to his [CV)](https://dinoarla.com/cv/) for further information.

@@ -391,6 +391,97 @@
       "issuer": "Udemy",
       "url": "#",
       "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Machine Learning with Imbalance Data",
+      "date": "2024-03-01",
+      "issuer": "Udemy",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Automated Machine Learning for Beginners (Google & Apple)",
+      "date": "2024-04-01",
+      "issuer": "Udemy",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Data Science Marathon",
+      "date": "2024-05-01",
+      "issuer": "Udemy",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Machine Learning A-Z: AI, Python & R + ChatGPT",
+      "date": "2024-06-01",
+      "issuer": "Udemy",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Introduction to Time Series Analysis and Forecasting in R",
+      "date": "2024-01-01",
+      "issuer": "Udemy",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "The Complete Python Bootcamp from Zero to Hero",
+      "date": "2024-02-01",
+      "issuer": "Udemy",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Work Online as a Web Developer",
+      "date": "2023-12-01",
+      "issuer": "Udemy",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Logistic Regression Practical Case Study",
+      "date": "2024-05-01",
+      "issuer": "Udemy",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "The Data Science Course: Complete Data Science Bootcamp",
+      "date": "2024-02-01",
+      "issuer": "Udemy",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Email Marketing Mastery Course 2020",
+      "date": "2020-12-01",
+      "issuer": "Udemy",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "100 Days of Code: The Complete Python Pro Bootcamp",
+      "date": "2024-07-01",
+      "issuer": "Udemy",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Mathematical Foundations of Machine Learning",
+      "date": "2024-01-01",
+      "issuer": "Udemy",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Machine Learning and Artificial Intelligence in Power BI",
+      "date": "2024-08-01",
+      "issuer": "Udemy",
+      "url": "#",
+      "icon": "fa-solid fa-location-dot"
     }
   ],
   "languages": [
