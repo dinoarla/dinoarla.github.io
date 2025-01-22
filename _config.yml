@@ -2,17 +2,16 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Welcome to my website | Dino Arla
+title: Notes of a dedication | Dino Arla
 first_name: Dino
 middle_name:
 last_name: Arla
 contact_note: >
   The best way to contact me is by <a href="mailto:halo@dinoarla.com">email</a>.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Welcome to Dino Arla Website. 
+  Dino Arla is an Electrical Engineer at PLN. Graduate student of MMT ITS. Corporate Innovator Winner. Machine Learning & AI Enthusiast. Full Stack Web Developer.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.
 keywords: dinoarla, dino, arla, jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -63,9 +62,9 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: dino-arla-web-og.png
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -80,14 +79,13 @@ openpanel_analytics: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX
 
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
 google_site_verification: mmUYtsvxljFBFscQTfu5NrABTqMYnGPMt0domQpLlzc
-bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
-
+bing_site_verification: E82A9581AA92D82B729A4A542F24EA7C
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
 
 blog_name: Dino Notes # blog_name will be displayed in your blog page
-blog_description: A story-journey-career of Dino Arla 
+blog_description: A story-journey-notes of Dino Arla 
 lsi: false # produce an index for related posts
 
 # Pagination
@@ -114,7 +112,7 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
