@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://dinoarla.github.io/sitemap.xml
+Sitemap: https://dinoarla.com/sitemap.xml
