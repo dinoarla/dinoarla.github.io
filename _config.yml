@@ -64,7 +64,7 @@ max_width: 930px
 # see https://schema.org/docs/faq.html for more information
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: true # Include Schema.org in the HTML head
-og_image: dino-arla-web-og.png
+og_image: https://drive.google.com/file/d/1Mw3jIs1ybQRkSecR_zQDIeLj8Xkgz3kr/view?usp=sharing
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
