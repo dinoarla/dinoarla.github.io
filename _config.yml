@@ -85,7 +85,7 @@ bing_site_verification: E82A9581AA92D82B729A4A542F24EA7C
 # -----------------------------------------------------------------------------
 
 blog_name: Dino Notes # blog_name will be displayed in your blog page
-blog_description: A story-journey-notes of Dino Arla 
+blog_description: A blog-journey-story of Dino Arla 
 lsi: false # produce an index for related posts
 
 # Pagination
