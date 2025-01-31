@@ -3,7 +3,7 @@ layout: post
 title: Reuniting with Old Friends - PLN Batch 7 year 2013 (King Solomon) Gathering for Eid al-Fitr 1444 H
 date: 2023-04-27 08:59:00-0400
 author: Dino Arla
-description: This year, the spirit of Eid brought us together with our cherished friends from "PLN Batch 7 year 2013 (King Solomon)", marking a joyful reunion filled with laughter and nostalgia. 
+description: This year, the spirit of Eid brought us together with our cherished friends from PLN Batch 7 year 2013 (King Solomon), marking a joyful reunion filled with laughter and nostalgia. 
 tags: personal friendship
 categories: friendship
 thumbnail: assets/img/blog/02-reuniting-old-friends/dino-arla-reuniting-old-friends-2023-01.png
