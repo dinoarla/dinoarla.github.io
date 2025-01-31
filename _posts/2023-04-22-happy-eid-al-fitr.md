@@ -7,7 +7,7 @@ description: Hari Raya Idul Fitri, also known as Eid al-Fitr, is a significant c
 tags: personal
 categories: family
 thumbnail: assets/img/blog/01-happy-eid/dino-arla-happy-eid-2023-02.png
-disqus_comments: true
+giscus_comments: true
 related_posts: true
 toc:
   sidebar: left
