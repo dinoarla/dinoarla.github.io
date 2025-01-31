@@ -47,7 +47,7 @@ Families prepare special meals, don new clothes, and decorate their homes to mar
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/blog/01-happy-eid/dino-arla-happy-eid-2023-04.png" class="img-fluid rounded z-depth-1"zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/blog/01-happy-eid/dino-arla-happy-eid-2023-04.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -78,7 +78,7 @@ In Pontianak City, West Kalimantan, Hari Raya Idul Fitri is celebrated with grea
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/blog/01-happy-eid/dino-arla-happy-eid-2023-01.png" class="img-fluid rounded z-depth-1"zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/blog/01-happy-eid/dino-arla-happy-eid-2023-01.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
