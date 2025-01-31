@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Happy Eid al-Fitr - Victory Shines, Bringing a Fresh Energy to a New Day
-date: 2023-04-22 08:30:00
+title: Happy Eid al-Fitr Victory Shines Bringing a Fresh Energy to a New Day
+date: 2023-04-22 11:59:00-0400
 author: Dino Arla
 description: Hari Raya Idul Fitri, also known as Eid al-Fitr, is a significant celebration for Muslims around the world. Celebrated on 1 Syawal 1444 H / April 22, 2023 M, this day marks the end of Ramadan, a holy month of fasting, prayer, and reflection
 tags: personal
