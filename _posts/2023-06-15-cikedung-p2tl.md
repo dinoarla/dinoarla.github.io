@@ -17,6 +17,12 @@ In the quaint district of Cikedung, a remarkable team of dedicated individuals i
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/blog/07-ckd-p2tl/dino-arla-ckd-p2tl-08.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/blog/07-ckd-p2tl/dino-arla-ckd-p2tl-02.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
