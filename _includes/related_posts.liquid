@@ -4,7 +4,6 @@
     {% assign have_related_posts = true %}
     <br>
     <hr>
-    <br>
     <ul class="list-disc pl-8"></ul>
 
     <!-- Adds related posts to the end of an article -->
@@ -16,7 +15,11 @@
     <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
   </li>
 {% endfor %}
+  <br>
+  <hr>
+
 {% if site.newsletter.enabled and site.footer_fixed %}
   <p class="mb-2" style="margin-top: 1.5rem !important">Subscribe to be notified of future articles:</p>
   {% include scripts/newsletter.liquid left=true %}
 {% endif %}
+
