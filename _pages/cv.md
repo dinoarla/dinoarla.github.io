@@ -1,6 +1,6 @@
 ---
 layout: cv
-permalink: /assets/pdf/dino-arla-cv.pdf
+permalink: /assets/pdf/dino-arla-cv-230925.pdf
 title: CV
 nav: true
 nav_order: 4
