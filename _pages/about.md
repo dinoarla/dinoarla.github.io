@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Electrical Engineer at <a href='https://web.pln.co.id/en/about-us/company-profile'>PLN</a>. Graduate student of <a href='https://www.its.ac.id/simt/en/home-2/'>MMT ITS</a>. Corporate Innovator Winner. Machine Learning & AI Enthusiast. Full Stack Web Developer.
+subtitle: Machine Learning Researcher in Energy Systems. Industry-Scale Smart Grid Analytics & Electricity Theft Detection.
 
 profile:
   align: right
@@ -18,10 +18,10 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Dino Arla is a seasoned Electrical Engineer with over `8 years` of professional experience at [PT PLN (Persero)](https://web.pln.co.id/en/about-us/company-profile), a leading electricity provider in Indonesia. With a robust career in the power industry, Dino has established himself as a driving force in operational excellence, innovation, and technology-driven solutions.
+I am an Electrical Engineer and applied Machine Learning researcher with over eight years of industry experience in national power system operations. My work at Indonesia’s largest electricity utility has focused on deploying data-driven solutions for smart grid operations, particularly large-scale electricity theft detection and decision-support systems for non-technical loss mitigation.
 
-Currently pursuing a Master’s degree in Technology Management at the [Institut Teknologi Sepuluh Nopember (ITS)](https://www.its.ac.id/simt/en/home-2/), Dino is specializing in `Business Analytics`, leveraging data-driven insights to drive corporate strategy and decision-making. His academic pursuits align with his professional interest in `Machine Learning and Artificial Intelligence`, showcasing his passion for harnessing cutting-edge technologies to solve complex challenges.
+I am currently completing a Master’s degree in Technology Management with a specialization in Business Analytics at [Institut Teknologi Sepuluh Nopember (ITS)](https://www.its.ac.id/simt/en/home-2/). This academic training has strengthened my methodological foundation in machine learning, cost-sensitive learning, and data-driven decision-making, directly informing my research on scalable AI methods for real-world energy systems.
 
-Dino’s expertise and innovative mindset have been recognized at the corporate level, earning him the prestigious `Corporate Innovator Award`, a testament to his ability to lead transformative projects that deliver tangible value. As a `Full Stack Web Developer`, he blends his technical acumen with creativity, crafting user-centric solutions that bridge the gap between technology and business needs.
+My research centers on developing deployable machine learning methodologies for smart grid analytics, with an emphasis on anomaly detection, ranking-based decision models, and cost-sensitive learning under operational constraints. By integrating large-scale consumption data, spatial characteristics, and economic considerations, I aim to bridge the gap between predictive performance and actionable decision-making in modern energy infrastructure.
 
-Committed to continuous learning and innovation, Dino stands out as a forward-thinking professional dedicated to advancing technology adoption within the energy sector and beyond. Here is the link to his [CV](https://dinoarla.com/assets/pdf/dino-cv.pdf) for further information.
+Through industry-embedded research and peer-reviewed contributions, I work toward advancing applied machine learning approaches that enhance the resilience, efficiency, and economic sustainability of large-scale power systems. Here is the link to my [CV](https://dinoarla.com/assets/pdf/dino-cv.pdf) for further information.
