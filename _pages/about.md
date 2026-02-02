@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Machine Learning Researcher in Energy Systems. Industry-Scale Smart Grid Analytics & Electricity Theft Detection.
+subtitle: Machine Learning Researcher in Energy Systems | Industry-Scale Smart Grid Analytics & Electricity Theft Detection.
 
 profile:
   align: right
