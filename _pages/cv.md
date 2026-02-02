@@ -1,10 +1,10 @@
 ---
 layout: cv
-permalink: /assets/pdf/dino-arla-cv-230925.pdf
+permalink: /assets/pdf/dino-cv.pdf
 title: CV
 nav: true
 nav_order: 4
-cv_pdf: dino-arla-cv.pdf # you can also use external links here
+cv_pdf: dino-cv.pdf # you can also use external links here
 description: 
 toc:
   sidebar: left
