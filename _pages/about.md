@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Machine Learning Researcher in Energy Systems | Industry-Scale Smart Grid Analytics & Electricity Theft Detection.
+subtitle: <b><i>Machine Learning Researcher in Energy Systems | Industry-Scale Smart Grid Analytics & Non-Technical Loss Mitigation</b></i>
 
 profile:
   align: right
@@ -17,11 +17,10 @@ news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-               
-I am an Electrical Engineer and applied Machine Learning researcher with over eight years of industry experience in national power system operations. My work at Indonesia’s largest electricity utility has focused on deploying data-driven solutions for smart grid operations, particularly large-scale electricity theft detection and decision-support systems for non-technical loss mitigation.
+I am an Electrical Engineer and applied Machine Learning researcher working at the intersection of data-driven methods and large-scale power system operations. I am currently based in Indonesia, with over eight years of industry-embedded experience at [PLN](https://web.pln.co.id/en/about-us/company-profile), where I have developed and deployed analytical systems for national power distribution networks.
 
-I am currently completing a Master’s degree in Technology Management with a specialization in Business Analytics at [Institut Teknologi Sepuluh Nopember (ITS)](https://www.its.ac.id/simt/en/home-2/). This academic training has strengthened my methodological foundation in machine learning, cost-sensitive learning, and data-driven decision-making, directly informing my research on scalable AI methods for real-world energy systems.
+My work focuses on applying machine learning to smart grid analytics, particularly electricity theft detection and non-technical loss mitigation in large-scale energy systems. I am interested in how anomaly detection, cost-sensitive learning, and ranking-based decision models can be integrated into real-world operational workflows, where decisions must be made under uncertainty, limited resources, and explicit economic trade-offs. Rather than treating prediction as an isolated task, my research frames machine learning as a decision-support tool for improving the reliability, efficiency, and resilience of critical energy infrastructure.
 
-My research centers on developing deployable machine learning methodologies for smart grid analytics, with an emphasis on anomaly detection, ranking-based decision models, and cost-sensitive learning under operational constraints. By integrating large-scale consumption data, spatial characteristics, and economic considerations, I aim to bridge the gap between predictive performance and actionable decision-making in modern energy infrastructure.
+I am currently completing a Master’s degree in Technology Management with a specialization in Business Analytics at [ITS](https://www.its.ac.id/simt/en/home-2/). My academic training complements my professional experience by strengthening my methodological foundation in machine learning and data-driven decision-making, particularly for deployment-aware applications in complex systems. My research has resulted in peer-reviewed publications in data science and energy-related venues, as well as the development of operational analytics systems with measurable real-world impact.
 
-Through industry-embedded research and peer-reviewed contributions, I work toward advancing applied machine learning approaches that enhance the resilience, efficiency, and economic sustainability of large-scale power systems. Here is the link to my [CV](https://dinoarla.com/assets/pdf/dino-cv.pdf) for further information.
+Beyond research, I am actively involved in mentoring and collaborative knowledge sharing, including supervising undergraduate research projects and delivering guest lectures on applied machine learning and data analytics. I am broadly interested in collaborations at the intersection of machine learning, energy systems, and large-scale infrastructure analytics. Further details on my work can be found in my [CV](https://dinoarla.com/assets/pdf/dino-cv.pdf) and [publications](https://dinoarla.com/publications/) listed below.
