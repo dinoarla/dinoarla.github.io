@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Instructor at PLN Distribution Unit of West Java
-date: 2024-06-20 09:59:00-0400
+date: 2024-06-20 08:00:00-0400
 author: Dino Arla
 description: Led a technical knowledge transfer session on "MAGNETO: Machine Learning for Ranking System to Prioritize P2TL Target Operation" at PLN Distribution Unit of West Java.
 categories: teaching

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Speaker at PLN Learning Centre of Pandaan
-date: 2025-06-25 09:59:00-0400
+date: 2025-06-25 08:00:00-0400
 author: Dino Arla
-description: Invited as a speaker at PLN Learning Centre's Knowledge Sharing Forum: "Knowledge to Impact, Toward the Global 500" — a national-level forum aimed at accelerating PLN's innovation culture and knowledge management practices.  
+description: Invited as a speaker at PLN Learning Centre Knowledge Sharing Forum: Knowledge to Impact, Toward the Global 500, a national-level forum aimed at accelerating PLN's innovation culture and knowledge management practices.  
 tags: teaching speaker pln pandaan
 categories: teaching
 thumbnail: assets/img/blog/19-speaker_pandaan/pandaan-01.jpeg

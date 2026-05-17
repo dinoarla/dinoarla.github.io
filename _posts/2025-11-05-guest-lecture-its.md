@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Guest Lecture at FSAD ITS
-date: 2025-11-05 09:59:00-0400
+date: 2025-11-05 08:00:00-0400
 author: Dino Arla
-description: Delivered a guest lecture on "Applied Machine Learning for Business Value Creation: From Data Science to Real-World Strategy" at the Faculty of Science and Data Analytics, Department of Statistics, ITS. 
+description: Delivered a guest lecture on Applied Machine Learning for Business Value Creation: From Data Science to Real-World Strategy at the Faculty of Science and Data Analytics, Department of Statistics, ITS. 
 tags: teaching its
 categories: teaching
 thumbnail: assets/img/blog/18-guest_lecture_its/guest-lecture-its.jpg
