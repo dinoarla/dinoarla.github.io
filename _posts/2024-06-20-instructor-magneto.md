@@ -24,5 +24,5 @@ Led a technical knowledge transfer session on "MAGNETO: Machine Learning for Ran
     </div>
 </div>
 <div class="caption">
-    Instructor at PLN Distribution Unit of West Java (On-Site)
+    Instructor at PLN Distribution Unit of West Java (On-Site).
 </div>

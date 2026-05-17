@@ -33,7 +33,7 @@ Topics covered: supervised learning pipelines, cost-sensitive classification, Au
     </div>
 </div>
 <div class="caption">
-    Guest Lecture, Faculty of Science and Data Analytics, Department of Statistics ITS (On-Site)
+    Guest Lecture, Faculty of Science and Data Analytics, Department of Statistics ITS (On-Site).
 </div>
 
 ## Material

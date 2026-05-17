@@ -58,7 +58,7 @@ Conducted an innovation paper writing and presentation training for engineers at
     </div>
 </div>
 <div class="caption">
-    Technical Deep Dive and Detailing, Talk about "Speak Like a CEO", and Project Cost Benefit Breakdown and Analysis 
+    Technical Deep Dive and Detailing, Talk about "Speak Like a CEO", and Project Cost Benefit Breakdown 
 </div>
 
 ## Material

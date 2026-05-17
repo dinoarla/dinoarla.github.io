@@ -25,5 +25,5 @@ Invited as a speaker at PLN Learning Centre's Knowledge Sharing Forum: "Knowledg
     </div>
 </div>
 <div class="caption">
-    Speaker, PLN Learning Centre of Pandaan (Hybrid)
+    Speaker, PLN Learning Centre of Pandaan (Hybrid).
 </div>
