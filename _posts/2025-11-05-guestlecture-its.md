@@ -40,4 +40,3 @@ Topics covered: supervised learning pipelines, cost-sensitive classification, Au
 
 PPT: https://drive.google.com/file/d/1u76i0DhkcLqEsxRiA3DQDxLAMWIKBzwv/view?usp=sharing
 Letter of Offering: https://drive.google.com/file/d/1xBRRNBdf9LPRZ1aPn1GqbVbAn50hMTlU/view?usp=sharing
-
