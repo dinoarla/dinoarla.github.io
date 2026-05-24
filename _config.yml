@@ -7,7 +7,7 @@ first_name: Dino
 middle_name:
 last_name: Arla
 contact_note: >
-  The best way to contact me is by <a href="mailto:halo@dinoarla.com">email</a>.
+  The best way to contact me is by <a href="mailto:dino.arla@pln.co.id">email</a>.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Dino Arla is an Electrical Engineer at PLN. Graduate student of MMT ITS. Corporate Innovator Winner. Machine Learning & AI Enthusiast. Full Stack Web Developer.
 footer_text: >
