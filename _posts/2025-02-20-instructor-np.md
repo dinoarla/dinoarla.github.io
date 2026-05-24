@@ -62,6 +62,6 @@ Conducted an innovation paper writing and presentation training for engineers at
 </div>
 
 ## Material
-
-[Letter of Offering:](https://drive.google.com/file/d/1PpoKYPhxoOml7gGMvaHnZ9KJUWLfRy0i/view?usp=sharing)
+Download here:<br>
+[Letter of Offering:](https://drive.google.com/file/d/1PpoKYPhxoOml7gGMvaHnZ9KJUWLfRy0i/view?usp=sharing)<br>
 [Rundown:](https://docs.google.com/spreadsheets/d/1lEtosUgLo5PJUJHk2FwxBFfL_7Wuj84i/edit?usp=drive_link&ouid=104220419968027712971&rtpof=true&sd=true)

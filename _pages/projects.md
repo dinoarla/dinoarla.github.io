@@ -2,7 +2,6 @@
 layout: default
 title: Projects
 permalink: /projects/
-description: Dino has been instrumental in helping countless individuals, organization and businesses thrive by optimizing their operations, enhancing their ecosystems, transform their business process and driving profitability. Explore innovative solutions and impactful projects designed to create lasting value and success.
 nav: true
 nav_order: 2
 display_categories: [machine learning & AI, automation, web development]
@@ -11,6 +10,11 @@ horizontal: false
 
 <!-- pages/projects.md -->
 <div class="projects">
+<div class="header-bar">
+    <h1>Projects</h1>
+    <h2>Somewhere, something incredible is waiting to be known</h2>
+  </div>
+
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
   {% for category in page.display_categories %}
