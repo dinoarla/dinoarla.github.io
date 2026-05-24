@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Projects
 permalink: /projects/
 description: Dino has been instrumental in helping countless individuals, organization and businesses thrive by optimizing their operations, enhancing their ecosystems, transform their business process and driving profitability. Explore innovative solutions and impactful projects designed to create lasting value and success.
