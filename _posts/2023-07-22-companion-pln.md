@@ -5,7 +5,7 @@ date: 2023-07-22 19:00:00-0400
 author: Dino Arla
 description: These companions from PLN (Perusahaan Listrik Negara), Indonesia's state electricity company, have grown together professionally and personally, transitioning from being fresh graduates to seasoned professionals, and now, loving husbands and proud fathers.
 tags: personal
-categories: friendship
+categories: pln
 thumbnail: assets/img/blog/08-companion-pln/dino-arla-companion-03.png
 giscus_comments: true
 related_posts: true

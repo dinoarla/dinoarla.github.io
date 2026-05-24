@@ -4,7 +4,7 @@ title: Instructor at PLN Nusantara Power Kapuas Power Generation Unit
 date: 2025-02-20 08:00:00-0400
 author: Dino Arla
 description: Conducted an innovation paper writing and presentation training for engineers at PLN Nusantara Power, Kapuas Power Generation Unit. Trained participants on structuring innovation papers, presenting technical findings effectively, and preparing submissions for PLN's national innovation competition
-tags: teaching pln nusantara-power
+tags: teaching pln
 categories: teaching
 thumbnail: assets/img/blog/20-instructor-np/teaching-vibes-01.jpeg
 giscus_comments: true

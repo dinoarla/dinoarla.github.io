@@ -5,7 +5,7 @@ date: 2023-08-13 15:00:00-0400
 author: Dino Arla
 description: One such example can be seen in the innovative initiative of the GAIA Kubu Raya Mall in West Kalimantan, Indonesia, where they have installed Solar Power Systems on the roof of their parking area.
 tags: personal
-categories: energy
+categories: energy-system
 thumbnail: assets/img/blog/12-solar-power/dino-arla-solar-01.png
 giscus_comments: true
 related_posts: true
