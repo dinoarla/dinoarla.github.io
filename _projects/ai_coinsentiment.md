@@ -2,7 +2,7 @@
 layout: page
 title: CoinSentiment
 description: Data Intelligence Platform for Crypto Market
-img: assets/img/project_preview/ind-fis/dino-arla-ai-simba.png
+img: assets/img/project_preview/ind-fis/dino-arla-ai-coinsentiment.png
 importance: 3
 category: machine learning & AI
 related_publications: true

@@ -13,7 +13,7 @@ AI and IoT-based fuel monitoring platform for large-scale industrial facilities.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/project_preview/ind-fis/ind-fis-01-dashboard-main.png" title="Main Control Dashboard — Multi-Site Overview" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/project_preview/ind-fis/ind-fis-01-dashboard-main.png" title="Main Control Dashboard — Multi-Site Overview" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -22,13 +22,13 @@ AI and IoT-based fuel monitoring platform for large-scale industrial facilities.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/project_preview/ind-fis/ind-fis-02-plant-flow.png" title="Plant View — Real-Time Tank Flow Diagram" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/project_preview/ind-fis/ind-fis-02-plant-flow.png" title="Plant View — Real-Time Tank Flow Diagram" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/project_preview/ind-fis/ind-fis-03-tank-info.png" title="Tank Detail — Capacity & Calibration Data" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/project_preview/ind-fis/ind-fis-03-tank-info.png" title="Tank Detail — Capacity & Calibration Data" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/project_preview/ind-fis/ind-fis-04-tank-list.png" title="Tank Registry — 25 Storage Units Tracked" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/project_preview/ind-fis/ind-fis-04-tank-list.png" title="Tank Registry — 25 Storage Units Tracked" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -37,13 +37,13 @@ AI and IoT-based fuel monitoring platform for large-scale industrial facilities.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/project_preview/ind-fis/ind-fis-05-quality-report.png" title="Quality Report — Fuel Density & Water Content" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/project_preview/ind-fis/ind-fis-05-quality-report.png" title="Quality Report — Fuel Density & Water Content" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/project_preview/ind-fis/ind-fis-06-data-input.png" title="Data Input — Scheduled Fuel Dispatch Entry" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/project_preview/ind-fis/ind-fis-06-data-input.png" title="Data Input — Scheduled Fuel Dispatch Entry" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/project_preview/ind-fis/ind-fis-07-depot-data.png" title="Depot Tracking — Tanker Vehicle Status" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/project_preview/ind-fis/ind-fis-07-depot-data.png" title="Depot Tracking — Tanker Vehicle Status" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -52,13 +52,13 @@ AI and IoT-based fuel monitoring platform for large-scale industrial facilities.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/project_preview/ind-fis/ind-fis-08-route-map.png" title="Route Map — Delivery Direction & ETA" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/project_preview/ind-fis/ind-fis-08-route-map.png" title="Route Map — Delivery Direction & ETA" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/project_preview/ind-fis/ind-fis-09-operations-monitor.png" title="Operations Monitor — Live Capacity & Deviasi" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/project_preview/ind-fis/ind-fis-09-operations-monitor.png" title="Operations Monitor — Live Capacity & Deviasi" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/project_preview/ind-fis/ind-fis-10-graph-visualization.png" title="Graph Visualization — Fuel Receipt & Usage Trend" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/project_preview/ind-fis/ind-fis-10-graph-visualization.png" title="Graph Visualization — Fuel Receipt & Usage Trend" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -67,10 +67,10 @@ AI and IoT-based fuel monitoring platform for large-scale industrial facilities.
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/project_preview/ind-fis/ind-fis-11-data-table.png" title="Data Export — Full Operational Records" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/project_preview/ind-fis/ind-fis-11-data-table.png" title="Data Export — Full Operational Records" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
   <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/project_preview/ind-fis/ind-fis-12-mobile-app.png" title="Mobile App — iOS & Android Supports" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/project_preview/ind-fis/ind-fis-12-mobile-app.png" title="Mobile App — iOS & Android Supports" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
 </div>
 <div class="caption">

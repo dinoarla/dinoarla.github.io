@@ -1,7 +1,7 @@
 ---
 layout: page
 title: BANNANA
-description: Mobile Marketing and Link Page Gratis
+description: Mobile Marketing and Free Link-in-bio Page
 img: assets/img/project_preview/dino-arla-web-bannana.png
 importance: 2
 category:  web development
