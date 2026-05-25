@@ -4,7 +4,7 @@ title: PLN Scholar Project - Collaboration with PLN Division of Corporate Busine
 date: 2023-05-29 08:00:00-0400
 author: Dino Arla
 description: In the rapidly evolving energy sector, staying ahead of the curve is essential for any organization aiming to lead the market. PLN (Perusahaan Listrik Negara), Indonesia’s state electricity company, recognizes this necessity and has established the PLN Scholar Project, a digital archive and directory of its strategic research and development endeavors.
-tags: pln
+tags: pln knowledge-sharing
 categories: pln
 thumbnail: assets/img/blog/14-pln-scholar/dino-arla-pln-scholar-01.png
 giscus_comments: true

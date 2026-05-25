@@ -4,7 +4,7 @@ title: PLN Scholar Project - A Continued Collaboration with PLN's Division of Co
 date: 2023-09-21 08:00:00-0400
 author: Dino Arla
 description: In this second installment of our blog series on the PLN Scholar Project, we delve deeper into the ongoing collaboration with PLN's Division of Corporate Business and Investment. Notably, Dino, a key figure in this endeavor, has been invited back to PLN's headquarters in South Jakarta to further the initiative.
-tags: pln
+tags: pln knowledge-sharing
 categories: pln
 thumbnail: assets/img/blog/15-pln-scholar-2/dino-arla-pln-scholar-2-06.png
 giscus_comments: true
