@@ -3,7 +3,7 @@ layout: page
 title: PORTAL
 description: Corporate Portal Website
 img: assets/img/project_preview/dino-arla-web-portal.jpg
-importance: 1
+importance: 15
 category:  web development
 ---
 

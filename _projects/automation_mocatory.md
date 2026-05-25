@@ -3,7 +3,7 @@ layout: page
 title: MOCATORY
 description: Drone Data Acquisition
 img: assets/img/project_preview/dino-arla-automation-mocatory-app.jpg
-importance: 5
+importance: 6
 category: automation
 related_publications: true
 ---

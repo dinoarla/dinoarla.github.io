@@ -3,7 +3,7 @@ layout: page
 title: CETTA
 description: Cetta Mom and Baby Spa Landing Page
 img: assets/img/project_preview/dino-arla-web-cetta.jpg
-importance: 1
+importance: 4
 category:  web development
 ---
 

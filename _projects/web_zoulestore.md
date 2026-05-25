@@ -3,7 +3,7 @@ layout: page
 title: ZOULE
 description: E-Commerce Website of Zoule Store
 img: assets/img/project_preview/dino-arla-web-zoulestore.jpg
-importance: 1
+importance: 17
 category:  web development
 ---
 

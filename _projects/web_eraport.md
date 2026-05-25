@@ -3,7 +3,7 @@ layout: page
 title: E-RAPORT
 description: Student Report Information System
 img: assets/img/project_preview/dino-arla-web-eraport.jpg
-importance: 1
+importance: 6
 category:  web development
 ---
 

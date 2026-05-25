@@ -3,7 +3,7 @@ layout: page
 title: MOCATORY
 description: Website Promotional of Mocatory
 img: assets/img/project_preview/dino-arla-web-mocatory.jpg
-importance: 1
+importance: 11
 category:  web development
 ---
 

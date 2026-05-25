@@ -3,7 +3,7 @@ layout: page
 title: SEIRA
 description: Sensor Monitoring at Diesel Power Plant
 img: assets/img/project_preview/dino-arla-automation-pltdsera.jpg
-importance: 2
+importance: 3
 category: automation
 related_publications: true
 ---

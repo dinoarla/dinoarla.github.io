@@ -3,7 +3,7 @@ layout: page
 title: NEOTAR
 description: E-Commerce Website of Neotar Collection
 img: assets/img/project_preview/dino-arla-web-neotar.jpg
-importance: 1
+importance: 13
 category:  web development
 ---
 

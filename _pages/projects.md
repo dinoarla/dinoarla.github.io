@@ -10,7 +10,7 @@ horizontal: false
 
 <!-- pages/projects.md -->
 <div class="projects">
-<div class="header-bar">
+<div class="header-bar-v2">
     <h1>Projects</h1>
     <h2>Somewhere, something incredible is waiting to be known</h2>
   </div>

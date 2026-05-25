@@ -3,7 +3,7 @@ layout: page
 title: APD
 description: Documents Workflow Application
 img: assets/img/project_preview/dino-arla-web-apd.jpg
-importance: 1
+importance: 3
 category:  web development
 ---
 

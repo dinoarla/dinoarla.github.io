@@ -3,7 +3,7 @@ layout: page
 title: ISLAMIC
 description: Website of Islamic News and Portal
 img: assets/img/project_preview/dino-arla-web-islamic.jpg
-importance: 1
+importance: 8
 category:  web development
 ---
 

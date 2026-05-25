@@ -3,7 +3,7 @@ layout: page
 title: SIMANTAP
 description: Chemical Sensor Monitoring Station
 img: assets/img/project_preview/dino-arla-automation-simantap.jpg
-importance: 3
+importance: 4
 category: automation
 related_publications: true
 ---

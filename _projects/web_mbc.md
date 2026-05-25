@@ -3,7 +3,7 @@ layout: page
 title: MBC
 description: Website of Motor Besar Club Indonesia
 img: assets/img/project_preview/dino-arla-web-mbc.jpg
-importance: 1
+importance: 10
 category:  web development
 ---
 

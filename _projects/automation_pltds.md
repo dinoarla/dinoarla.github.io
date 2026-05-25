@@ -3,7 +3,7 @@ layout: page
 title: PLTDS
 description: Engine Data Acquisition at Diesel Power Plant
 img: assets/img/project_preview/dino-arla-automation-pltds.jpg
-importance: 1
+importance: 2
 category: automation
 related_publications: true
 ---

@@ -3,7 +3,7 @@ layout: page
 title: SILAKAN
 description: E-Commerce Website of Silakan Indonesia
 img: assets/img/project_preview/dino-arla-web-silakan.jpg
-importance: 1
+importance: 16
 category:  web development
 ---
 

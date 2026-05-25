@@ -3,7 +3,7 @@ layout: page
 title: DEKRANASDA
 description: Promotional Website of Dewan Kerajinan Nasional Daerah
 img: assets/img/project_preview/dino-arla-web-dekranasda.jpg
-importance: 1
+importance: 5
 category:  web development
 ---
 

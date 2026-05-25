@@ -3,7 +3,7 @@ layout: page
 title: GUDANG
 description: Warehouse Inventory System
 img: assets/img/project_preview/dino-arla-web-gudang-pltds.jpg
-importance: 1
+importance: 7
 category:  web development
 ---
 

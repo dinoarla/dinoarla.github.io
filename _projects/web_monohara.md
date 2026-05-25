@@ -3,7 +3,7 @@ layout: page
 title: MONOHARA
 description: Engine Maintenance and Overhaul Monitoring System
 img: assets/img/project_preview/dino-arla-web-monohara.jpg
-importance: 1
+importance: 12
 category:  web development
 ---
 

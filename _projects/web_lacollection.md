@@ -3,7 +3,7 @@ layout: page
 title: LACOLLECTION
 description: E-Commerce Website of LA Collection
 img: assets/img/project_preview/dino-arla-web-lacollection.jpg
-importance: 1
+importance: 9
 category:  web development
 ---
 

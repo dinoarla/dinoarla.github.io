@@ -3,7 +3,7 @@ layout: page
 title: SI-HUTAN
 description: Forest Monitoring with IoT Technology
 img: assets/img/project_preview/dino-arla-automation-sipemantauhutan.jpg
-importance: 4
+importance: 5
 category: automation
 related_publications: true
 ---
