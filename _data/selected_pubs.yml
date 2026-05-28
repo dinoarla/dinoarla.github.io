@@ -1,14 +1,23 @@
 - title: "Machine Learning-based Electricity Theft Detection Considering Customer Consumption Pattern and Geographical Condition"
   preview: "dino-arla-ml-theft-1.png"
   url: "https://doi.org/10.1109/ICoDSA67155.2025.11157579"
-  venue: "IEEE ICoDSA 2025"
 
 - title: "Eco En Liza: Utilization of Diesel Engine Coolant Waste Energy as a Source of Electricity for Micro Hydroelectric Power Plants"
   preview: "dino-arla-econliza.png"
   url: "https://doi.org/10.1109/ICT-PEP67281.2025.11232224"
-  venue: "IEEE ICT-PEP 2025"
 
-- title: "Anti Theft Power Smart Metering System"
-  preview: "dino-arla-anti-theft.png"
-  url: "https://ieeexplore.ieee.org/abstract/document/10732892"
-  venue: "IEEE ICT-PEP 2024"
+- title: "AQORTA — Air Quality and Noise Real Time Data Acquisition"
+  preview: "dino-arla-paten-aqorta.png"
+  url: "https://www.dgip.go.id/berita-resmi/berita-resmi-paten?lihat=4f6338829c0986d268bbe4bc4e6ad4bc.pdf"
+
+- title: "VOLTASE — Visualisasi Online Pemetaan Bahaya Kelistrikan Umum dan Keselamatan Kerja"
+  preview: "dino-arla-voltase.png"
+  url: "/publications/"
+
+- title: "SOLIPAD — Solusi Tuntas Pelanggan Usaha Penggilingan Padi Berbasis Geospatial Analysis"
+  preview: "dino-arla-solipad.png"
+  url: "/assets/pdf/dino-arla-solipad.pdf"
+
+- title: "SIMBA — Aplikasi Sistem Informasi Bahan Bakar Minyak Berbasis Interactive GUI"
+  preview: "dino-arla-simba.png"
+  url: "/assets/pdf/dino-arla-simba.pdf"
