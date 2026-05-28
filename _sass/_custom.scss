@@ -2,6 +2,68 @@
  * Custom styles — dinoarla.github.io
  ******************************************************************************/
 
+// ─── D. Hero — gradient name & profile glow ──────────────────────────────────
+
+// Gradient on first name "Dino"
+.post-title .font-weight-bold {
+  background: linear-gradient(135deg, var(--global-theme-color) 0%, #{$cyan-color} 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+// Profile photo glow in dark mode
+html[data-theme="dark"] .profile img {
+  box-shadow:
+    0 0 0 3px rgba(38, 152, 186, 0.25),
+    0 0 28px rgba(38, 152, 186, 0.12);
+  transition: box-shadow 0.3s ease;
+}
+
+// ─── C. Typography hierarchy ─────────────────────────────────────────────────
+
+// Light mode: navbar + card surfaces pop against off-white bg
+:root .navbar {
+  background-color: rgba(255, 255, 255, 0.92) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+}
+
+html[data-theme="dark"] .navbar {
+  background-color: rgba(28, 28, 29, 0.92) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+// Section headings on about page
+.post h2 {
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+// Post description / subtitle
+.post .desc {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--global-text-color-light);
+  min-height: 1.5em;
+}
+
+// Light mode: card border more visible
+:root .card {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+// Light mode: z-depth more subtle (cards already stand out on off-white bg)
+:root .z-depth-1 {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
 // ─── 8. Navbar micro-interactions ────────────────────────────────────────────
 
 .navbar .nav-link {
