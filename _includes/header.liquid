@@ -20,14 +20,11 @@
         <!-- Social Icons -->
         <div class="navbar-brand social">{% include social.liquid %}</div>
       {% endif %}
-      <!-- Navbar Toggle -->
+      <!-- Navbar Toggle — opens fullscreen overlay on mobile -->
       <button
         class="navbar-toggler collapsed ml-auto"
         type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
+        onclick="openMobileNav()"
         aria-label="Toggle navigation"
       >
         <span class="sr-only">Toggle navigation</span>
@@ -135,6 +132,77 @@
       </div>
     </div>
   </nav>
+
+  <!-- Full-screen mobile nav overlay -->
+  <div id="mobile-nav-overlay" class="mobile-nav-overlay" aria-hidden="true" role="dialog">
+    <div class="mobile-nav-header">
+      <a class="mobile-nav-brand" href="{{ '/' | relative_url }}" onclick="closeMobileNav()">
+        <span class="mobile-nav-brand-first">{{ site.first_name }}</span>&nbsp;{{ site.last_name }}
+      </a>
+      <button class="mobile-nav-close" onclick="closeMobileNav()" aria-label="Close menu">
+        <i class="ti ti-x"></i>
+      </button>
+    </div>
+
+    <nav class="mobile-nav-links">
+      <a href="{{ '/' | relative_url }}"
+         class="mobile-nav-link {% if page.permalink == '/' %}active{% endif %}"
+         onclick="closeMobileNav()">
+        {{- about_title -}}
+      </a>
+      {% for p in sorted_pages %}
+        {% if p.nav and p.autogen == null %}
+          {% unless p.dropdown %}
+            {%- if p.permalink contains '://' -%}
+              {%- assign murl = p.permalink -%}
+            {%- elsif p.permalink contains '/blog/' -%}
+              {%- assign murl = '/blog/' -%}
+            {%- else -%}
+              {%- assign murl = p.url -%}
+            {%- endif %}
+            {% assign parent_link = p.permalink | remove: 'index.html' %}
+            <a href="{{ murl | relative_url }}"
+               class="mobile-nav-link {% if page.url contains parent_link %}active{% endif %}"
+               onclick="closeMobileNav()">
+              {{- p.title -}}
+            </a>
+          {% endunless %}
+        {% endif %}
+      {% endfor %}
+    </nav>
+
+    <div class="mobile-nav-actions">
+      {% if site.search_enabled %}
+        <button class="mobile-nav-action-btn" onclick="closeMobileNav(); setTimeout(openSearchModal, 300);" aria-label="Search">
+          <i class="ti ti-search"></i>
+        </button>
+      {% endif %}
+      {% if site.enable_darkmode %}
+        <button class="mobile-nav-action-btn" onclick="document.getElementById('light-toggle').click()" aria-label="Toggle theme">
+          <i class="ti ti-sun-moon"></i>
+        </button>
+      {% endif %}
+    </div>
+  </div>
+
+  <script>
+    function openMobileNav() {
+      var overlay = document.getElementById('mobile-nav-overlay');
+      overlay.classList.add('is-open');
+      overlay.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMobileNav() {
+      var overlay = document.getElementById('mobile-nav-overlay');
+      overlay.classList.remove('is-open');
+      overlay.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeMobileNav();
+    });
+  </script>
+
   {% if site.enable_progressbar %}
     <!-- Scrolling Progress Bar -->
     <progress id="progress" value="0">
