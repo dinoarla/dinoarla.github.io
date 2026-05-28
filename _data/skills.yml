@@ -1,0 +1,32 @@
+- category: "Research"
+  color: "#b509ac"
+  items:
+    - "Machine Learning"
+    - "Anomaly Detection"
+    - "Cost-Sensitive Learning"
+    - "scikit-learn"
+    - "XGBoost"
+
+- category: "Programming"
+  color: "#0076df"
+  items:
+    - "Python"
+    - "JavaScript"
+    - "R"
+    - "SQL"
+
+- category: "Domain"
+  color: "#00ab37"
+  items:
+    - "Power Systems"
+    - "Smart Grid"
+    - "Non-Technical Loss"
+    - "IoT"
+
+- category: "Tools"
+  color: "#f29105"
+  items:
+    - "Git"
+    - "Docker"
+    - "PostgreSQL"
+    - "Jekyll"

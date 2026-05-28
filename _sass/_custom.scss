@@ -1,0 +1,306 @@
+/*******************************************************************************
+ * Custom styles — dinoarla.github.io
+ ******************************************************************************/
+
+// ─── 8. Navbar micro-interactions ────────────────────────────────────────────
+
+.navbar .nav-link {
+  position: relative;
+  text-decoration: none !important;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--global-theme-color);
+    transition: width 0.25s ease;
+    border-radius: 2px;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.nav-item.active > .nav-link::after {
+  width: 100%;
+}
+
+// ─── 4. Project card hover overlay ───────────────────────────────────────────
+
+.projects-container .card.hoverable,
+.grid .card.hoverable {
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+  img.card-img-top,
+  picture img {
+    transition: transform 0.4s ease;
+    width: 100%;
+    display: block;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--global-theme-color);
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+
+    &::before {
+      opacity: 0.12;
+    }
+
+    img.card-img-top,
+    picture img {
+      transform: scale(1.05);
+    }
+  }
+}
+
+// ─── 5. Now widget ────────────────────────────────────────────────────────────
+
+.now-widget {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem 1.1rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.6rem;
+  margin: 1.25rem 0 1rem;
+  font-size: 0.88rem;
+  background: var(--global-card-bg-color);
+  max-width: 520px;
+
+  .now-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #00ab37;
+    flex-shrink: 0;
+    margin-top: 3px;
+    box-shadow: 0 0 0 0 rgba(0, 171, 55, 0.6);
+    animation: now-pulse 2.2s ease-in-out infinite;
+  }
+
+  .now-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+
+    strong {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--global-text-color-light);
+    }
+
+    .now-items {
+      display: flex;
+      flex-direction: column;
+      gap: 0.18rem;
+      color: var(--global-text-color);
+    }
+
+    .now-updated {
+      font-size: 0.76rem;
+      color: var(--global-text-color-light);
+      margin-top: 0.3rem;
+    }
+  }
+
+  @keyframes now-pulse {
+    0%   { box-shadow: 0 0 0 0 rgba(0, 171, 55, 0.6); }
+    65%  { box-shadow: 0 0 0 7px rgba(0, 171, 55, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(0, 171, 55, 0); }
+  }
+}
+
+// ─── 2. Skills section ────────────────────────────────────────────────────────
+
+.skills-section {
+  margin: 1.25rem 0 1.5rem;
+
+  .skills-heading {
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.6rem;
+  }
+
+  .skills-group {
+    margin-bottom: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem;
+
+    .skills-category-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--global-text-color-light);
+      min-width: 90px;
+      margin-right: 0.1rem;
+    }
+
+    .skill-chip {
+      display: inline-block;
+      padding: 0.18rem 0.6rem;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      border: 1px solid currentColor;
+      transition: background 0.2s ease, color 0.2s ease;
+      cursor: default;
+
+      &:hover {
+        background: var(--global-theme-color);
+        color: #fff !important;
+        border-color: var(--global-theme-color);
+      }
+    }
+  }
+}
+
+// ─── 7. Publications grid / card view toggle ──────────────────────────────────
+
+.pub-toolbar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+
+  .pub-view-toggle {
+    display: flex;
+    gap: 0.25rem;
+
+    button {
+      background: transparent;
+      border: 1px solid var(--global-divider-color);
+      border-radius: 6px;
+      padding: 0.3rem 0.6rem;
+      cursor: pointer;
+      color: var(--global-text-color-light);
+      transition: all 0.2s ease;
+
+      &.active,
+      &:hover {
+        background: var(--global-theme-color);
+        color: #fff;
+        border-color: var(--global-theme-color);
+      }
+    }
+  }
+}
+
+// Grid view styles
+.publications.pub-grid-view {
+  ol.bibliography {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 1.25rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      background: var(--global-card-bg-color);
+      border: 1px solid var(--global-divider-color);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+      }
+
+      .row {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 0;
+      }
+
+      // Thumbnail full width
+      .col.col-sm-2.abbr {
+        max-width: 100%;
+        width: 100%;
+        flex: none;
+        padding: 0;
+
+        abbr.badge {
+          display: none;
+        }
+
+        .preview {
+          width: 100% !important;
+          height: 145px;
+          object-fit: cover;
+          border-radius: 0;
+          margin: 0;
+        }
+
+        figure {
+          margin: 0;
+          img {
+            width: 100% !important;
+            height: 145px;
+            object-fit: cover;
+            border-radius: 0;
+          }
+        }
+      }
+
+      // Title column full width
+      .col-sm-8 {
+        max-width: 100%;
+        width: 100%;
+        flex: 1;
+        padding: 0.75rem;
+
+        .title {
+          font-size: 0.85rem;
+          font-weight: 600;
+          line-height: 1.35;
+          margin-bottom: 0.3rem;
+        }
+
+        .author,
+        .periodical,
+        .links,
+        .badges,
+        .abstract,
+        .bibtex {
+          display: none !important;
+        }
+      }
+
+      // Hide badge column
+      .col-sm-2:last-child {
+        display: none;
+      }
+    }
+  }
+
+  // Keep year headings visible
+  h2.bibliography {
+    grid-column: 1 / -1;
+    margin-top: 1rem;
+  }
+}

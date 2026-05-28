@@ -13,6 +13,12 @@ profile:
     <p>Istanbul, Türkiye</p>
     <p>August 13, 2024</p>
 
+typed_strings:
+  - "Machine Learning Researcher in Energy Systems"
+  - "Smart Grid Analytics & Non-Technical Loss Mitigation"
+  - "Applied AI for Critical Infrastructure"
+  - "Full-Stack Web Developer"
+
 news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page

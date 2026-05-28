@@ -1,0 +1,13 @@
+{% if site.data.skills %}
+<div class="skills-section">
+  <p class="skills-heading">Tech &amp; Research Stack</p>
+  {% for group in site.data.skills %}
+    <div class="skills-group">
+      <span class="skills-category-label">{{ group.category }}</span>
+      {% for item in group.items %}
+        <span class="skill-chip" style="color: {{ group.color }}; border-color: {{ group.color }};">{{ item }}</span>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>
+{% endif %}

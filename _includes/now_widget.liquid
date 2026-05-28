@@ -1,0 +1,15 @@
+{% assign now = site.data.now %}
+{% if now %}
+<div class="now-widget">
+  <span class="now-dot"></span>
+  <div class="now-body">
+    <strong>Currently</strong>
+    <div class="now-items">
+      <span>{{ now.role }}</span>
+      <span>{{ now.study }}</span>
+      <span>{{ now.focus }}</span>
+    </div>
+    <span class="now-updated">📍 {{ now.location }} &nbsp;·&nbsp; Updated {{ now.updated }}</span>
+  </div>
+</div>
+{% endif %}
