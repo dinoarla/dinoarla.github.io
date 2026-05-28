@@ -583,16 +583,50 @@ html[data-theme="dark"] .navbar {
   position: fixed;
   inset: 0;
   z-index: 9990;
-  background: rgba(8, 8, 10, 0.97);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  // Dark navy base + subtle blue radial bloom at top
+  background:
+    radial-gradient(ellipse 90% 50% at 50% -10%, rgba(0, 118, 223, 0.15) 0%, transparent 100%),
+    #07090f;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  padding: 1.1rem 1.6rem 2rem;
+  padding: 1.3rem 1.8rem 2rem;
   opacity: 0;
   pointer-events: none;
-  transform: translateY(-6px);
-  transition: opacity 0.26s ease, transform 0.26s ease;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+  // 2px gradient accent line at the top edge
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #0076df 0%, #26c6da 100%);
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  // Faint "DA" monogram watermark — bottom-right
+  &::after {
+    content: 'DA';
+    position: absolute;
+    right: -0.06em;
+    bottom: 1%;
+    font-size: 44vw;
+    font-weight: 900;
+    letter-spacing: -0.06em;
+    line-height: 1;
+    background: linear-gradient(135deg, rgba(0, 118, 223, 0.07) 0%, rgba(38, 198, 218, 0.03) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+  }
 
   &.is-open {
     opacity: 1;
@@ -600,7 +634,6 @@ html[data-theme="dark"] .navbar {
     transform: translateY(0);
   }
 
-  // Only visible below the sm breakpoint
   @media (min-width: 576px) {
     display: none !important;
   }
@@ -610,33 +643,40 @@ html[data-theme="dark"] .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .mobile-nav-brand {
   font-size: 1rem;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.85) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
   text-decoration: none !important;
+  letter-spacing: 0.01em;
 
   .mobile-nav-brand-first {
     font-weight: 700;
-    color: var(--global-theme-color) !important;
+    background: linear-gradient(90deg, #0076df 0%, #26c6da 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }
 
 .mobile-nav-close {
   background: none;
   border: none;
-  color: rgba(255, 255, 255, 0.55);
-  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 1.3rem;
   line-height: 1;
   cursor: pointer;
-  padding: 0.2rem;
+  padding: 0.2rem 0.1rem;
   transition: color 0.2s;
+  position: relative;
+  z-index: 1;
 
   &:hover {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
   }
 }
 
@@ -645,49 +685,59 @@ html[data-theme="dark"] .navbar {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 0.1rem;
+  gap: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .mobile-nav-link {
   display: block;
-  font-size: 2.2rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 300;
   letter-spacing: -0.02em;
-  color: rgba(255, 255, 255, 0.35) !important;
+  color: rgba(255, 255, 255, 0.28) !important;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.28);
   text-decoration: none !important;
-  padding: 0.5rem 0;
-  text-align: center;
-  transition: color 0.2s ease;
+  padding: 0.42rem 0;
+  text-align: left;
+  transition: color 0.22s ease, -webkit-text-fill-color 0.22s ease;
 
   &:hover {
-    color: rgba(255, 255, 255, 0.85) !important;
+    color: rgba(255, 255, 255, 0.68) !important;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.68);
   }
 
   &.active {
-    color: #fff !important;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    background: linear-gradient(90deg, #0076df 0%, #26c6da 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text;
   }
 }
 
 .mobile-nav-actions {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 1.25rem;
-  padding-top: 0.5rem;
+  gap: 0.5rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  position: relative;
+  z-index: 1;
 }
 
 .mobile-nav-action-btn {
   background: none;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 8px;
-  color: rgba(255, 255, 255, 0.55);
-  font-size: 1.1rem;
-  padding: 0.5rem 0.7rem;
+  border: none;
+  color: rgba(255, 255, 255, 0.28);
+  font-size: 1.15rem;
+  padding: 0.3rem 0.5rem;
   cursor: pointer;
-  transition: color 0.2s, border-color 0.2s;
+  transition: color 0.2s;
 
   &:hover {
-    color: #fff;
-    border-color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.7);
   }
 }
