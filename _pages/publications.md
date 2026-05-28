@@ -10,11 +10,12 @@ nav_order: 1
 
 <div class="publications" id="pub-container">
 
+  <div class="header-bar-v2">
+    <h1>Publications</h1>
+    <h2>Nothing in science has any value to society if it is not communicated</h2>
+  </div>
+
   <div class="pub-toolbar">
-    <div class="header-bar-v2">
-      <h1>Publications</h1>
-      <h2>Nothing in science has any value to society if it is not communicated</h2>
-    </div>
     <div class="pub-view-toggle">
       <button id="pub-list-btn" class="active" onclick="setPubView('list')" title="List View">
         <i class="fa-solid fa-list"></i>
