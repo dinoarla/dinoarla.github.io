@@ -1,18 +1,16 @@
-<div class="row row-cols-3 gx-3 gy-3 mt-1 mb-3">
+<div class="selected-pub-grid">
   {% for pub in site.data.selected_pubs %}
-    <div class="col">
-      <a href="{{ pub.url }}" target="_blank" rel="noopener noreferrer">
-        <div class="selected-pub-thumb">
-          <img
-            src="{{ pub.preview | prepend: '/assets/img/publication_preview/' | relative_url }}"
-            alt="{{ pub.title }}"
-            loading="lazy"
-          />
-          <div class="selected-pub-overlay">
-            <span>{{ pub.title }}</span>
-          </div>
+    <a href="{{ pub.url }}" target="_blank" rel="noopener noreferrer">
+      <div class="selected-pub-thumb">
+        <img
+          src="{{ pub.preview | prepend: '/assets/img/publication_preview/' | relative_url }}"
+          alt="{{ pub.title }}"
+          loading="lazy"
+        />
+        <div class="selected-pub-overlay">
+          <span>{{ pub.title }}</span>
         </div>
-      </a>
-    </div>
+      </div>
+    </a>
   {% endfor %}
 </div>

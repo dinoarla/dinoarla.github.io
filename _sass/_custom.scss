@@ -93,10 +93,18 @@ html[data-theme="dark"] .navbar {
 
 // ─── Selected Publications thumbnails ────────────────────────────────────────
 
+.selected-pub-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+}
+
 .selected-pub-thumb {
   position: relative;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   border-radius: 8px;
   border: 1px solid var(--global-divider-color);
@@ -147,27 +155,28 @@ html[data-theme="dark"] .navbar {
 
 .header-bar-v2,
 .header-bar {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  text-align: left !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1.25rem !important;
 
   h1 {
-    font-size: 2.6rem !important;
+    font-size: 2.4rem !important;
     font-weight: 700 !important;
     letter-spacing: -0.03em;
     background: linear-gradient(135deg, var(--global-theme-color) 0%, #{$cyan-color} 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-bottom: 0.6rem !important;
+    margin-bottom: 0.4rem !important;
   }
 
   h2 {
-    font-size: 1rem !important;
+    font-size: 0.95rem !important;
     font-weight: 400;
     color: var(--global-text-color-light) !important;
-    max-width: 560px;
-    margin: 0 auto;
-    line-height: 1.6;
+    max-width: none;
+    margin: 0;
+    line-height: 1.5;
   }
 }
 
