@@ -469,14 +469,15 @@ html[data-theme="dark"] .navbar {
 
 .latest-notes-list {
   .notes-year-group {
-    margin-bottom: 0.75rem;
+    margin-top: 1.25rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   .notes-year-header {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.3rem;
   }
 
   .notes-year-label {
@@ -485,22 +486,15 @@ html[data-theme="dark"] .navbar {
     text-transform: uppercase;
     letter-spacing: 0.07em;
     color: var(--global-theme-color);
-    white-space: nowrap;
   }
 
-  .notes-year-hr {
-    flex: 1;
-    border: none;
-    border-top: 1px solid var(--global-divider-color);
-    margin: 0;
-  }
-
+  // Border-top on each row so the last row has no trailing line below it
   .notes-row {
     display: flex;
     align-items: baseline;
     gap: 0.75rem;
-    padding: 0.42rem 0;
-    border-bottom: 1px solid var(--global-divider-color);
+    padding: 0.44rem 0;
+    border-top: 1px solid var(--global-divider-color);
 
     &.notes-row-hidden {
       display: none;
@@ -508,15 +502,15 @@ html[data-theme="dark"] .navbar {
   }
 
   .notes-date {
-    font-size: 0.78rem;
+    font-size: 0.88rem;
     color: var(--global-text-color-light);
     white-space: nowrap;
-    min-width: 48px;
+    min-width: 52px;
     flex-shrink: 0;
   }
 
   .notes-title {
-    font-size: 0.88rem;
+    font-size: 1rem;
     color: var(--global-text-color);
     text-decoration: none;
     line-height: 1.4;
@@ -528,11 +522,11 @@ html[data-theme="dark"] .navbar {
 
   .notes-show-more {
     display: block;
-    margin-top: 0.35rem;
+    margin-top: 0.4rem;
     background: none;
     border: none;
     padding: 0.25rem 0;
-    font-size: 0.78rem;
+    font-size: 0.88rem;
     color: var(--global-theme-color);
     cursor: pointer;
 
@@ -542,10 +536,10 @@ html[data-theme="dark"] .navbar {
   }
 
   .notes-footer {
-    margin-top: 0.75rem;
+    margin-top: 0.85rem;
 
     .notes-view-all {
-      font-size: 0.82rem;
+      font-size: 0.9rem;
       color: var(--global-theme-color);
       text-decoration: none;
 
@@ -554,6 +548,12 @@ html[data-theme="dark"] .navbar {
       }
     }
   }
+}
+
+// ─── Publications container top-margin reset ──────────────────────────────────
+
+.publications {
+  margin-top: 0 !important;
 }
 
 // ─── Tag / category list mobile fix ──────────────────────────────────────────
