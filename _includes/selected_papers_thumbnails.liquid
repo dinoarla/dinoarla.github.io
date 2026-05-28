@@ -1,14 +1,14 @@
-<div class="row mt-3 mb-4 g-2">
+<div class="row row-cols-3 g-3 mt-1 mb-3">
   {% for pub in site.data.selected_pubs %}
-    <div class="col-4 col-sm-4">
+    <div class="col">
       <a href="{{ pub.url }}" target="_blank" rel="noopener noreferrer" title="{{ pub.title }}">
-        <img
-          src="{{ pub.preview | prepend: '/assets/img/publication_preview/' | relative_url }}"
-          alt="{{ pub.title }}"
-          class="img-fluid rounded z-depth-1"
-          loading="lazy"
-          style="width: 100%; height: 90px; object-fit: cover;"
-        />
+        <div class="selected-pub-thumb">
+          <img
+            src="{{ pub.preview | prepend: '/assets/img/publication_preview/' | relative_url }}"
+            alt="{{ pub.title }}"
+            loading="lazy"
+          />
+        </div>
       </a>
     </div>
   {% endfor %}
