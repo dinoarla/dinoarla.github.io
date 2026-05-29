@@ -24,6 +24,8 @@ nav: false
       {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
     {% endif %}
     {% assign year = post.date | date: "%Y" %}
+    {% assign post_abs_url = post.url | absolute_url %}
+    {% assign translate_url = "https://translate.google.com/translate?sl=en&tl=id&u=" | append: post_abs_url %}
 
     <li>
 
@@ -33,14 +35,14 @@ nav: false
 {% endif %}
       <h3>
       {% if post.redirect == blank %}
-        <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <a class="post-title" href="{{ translate_url }}" target="_blank" rel="noopener">{{ post.title }}</a>
       {% elsif post.redirect contains '://' %}
         <a class="post-title" href="{{ post.redirect }}" target="_blank">{{ post.title }}</a>
         <svg width="2rem" height="2rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
           <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path>
         </svg>
       {% else %}
-        <a class="post-title" href="{{ post.redirect | relative_url }}">{{ post.title }}</a>
+        <a class="post-title" href="{{ translate_url }}" target="_blank" rel="noopener">{{ post.title }}</a>
       {% endif %}
     </h3>
     <p>{{ post.description }}</p>
