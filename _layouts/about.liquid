@@ -49,7 +49,7 @@ layout: default
     <!-- Selected Publications Thumbnails -->
     <div class="selected-papers-section mt-4 mb-5">
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit"><b>Selected Publications</b></a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit"><b>{% if page.lang == 'id' %}Publikasi Terpilih{% else %}Selected Publications{% endif %}</b></a>
       </h2>
       {% include selected_papers_thumbnails.liquid %}
     </div>
@@ -59,7 +59,11 @@ layout: default
     <!-- Latest notes -->
     {% if site.latest_posts.enabled %}
       <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit"><b>Latest Notes</b></a>
+        {% if page.lang == 'id' %}
+          <a href="/id/blog/" style="color: inherit"><b>Catatan Terbaru</b></a>
+        {% else %}
+          <a href="{{ '/blog/' | relative_url }}" style="color: inherit"><b>Latest Notes</b></a>
+        {% endif %}
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}

@@ -1,9 +1,24 @@
 <header>
+  {%- assign is_id = false -%}
+  {%- if page.lang == 'id' -%}{%- assign is_id = true -%}{%- endif -%}
+  {%- if is_id -%}
+    {%- assign en_url = page.url | remove_first: '/id' -%}
+    {%- if en_url == '' -%}{%- assign en_url = '/' -%}{%- endif -%}
+    {%- assign id_url = page.url -%}
+  {%- else -%}
+    {%- assign en_url = page.url -%}
+    {%- if page.lang == 'en' -%}
+      {%- assign id_url = '/id/' -%}
+    {%- else -%}
+      {%- assign id_url = '/id' | append: page.url -%}
+    {%- endif -%}
+  {%- endif -%}
+
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
+      {% if page.permalink != '/' and page.permalink != '/id/' %}
+        <a class="navbar-brand title font-weight-lighter" href="{% if is_id %}/id/{% else %}{{ site.baseurl }}/{% endif %}">
             {% if site.first_name %}
               <span class="font-weight-bold">
                 {{- site.first_name -}}
@@ -35,81 +50,112 @@
 
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
-          {% for page in site.pages %}
-            {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
-          {% endfor %}
 
-          <!-- About -->
-          <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-            <a class="nav-link" href="{{ '/' | relative_url }}">
-              {{- about_title }}
-              {% if page.permalink == '/' %}
-                <span class="sr-only">(current)</span>
+          {% if is_id %}
+            <!-- Indonesian navigation -->
+            <li class="nav-item {% if page.url == '/id/' %}active{% endif %}">
+              <a class="nav-link" href="/id/">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/publications/">Publikasi</a>
+            </li>
+            <li class="nav-item {% if page.url contains '/id/projects/' %}active{% endif %}">
+              <a class="nav-link" href="/id/projects/">Proyek</a>
+            </li>
+            <li class="nav-item {% if page.url contains '/id/blog/' %}active{% endif %}">
+              <a class="nav-link" href="/id/blog/">Catatan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/assets/pdf/DinoArla_Vitae_0526.pdf">CV</a>
+            </li>
+            <li class="nav-item {% if page.url contains '/id/calendar/' %}active{% endif %}">
+              <a class="nav-link" href="/id/calendar/">Kalender</a>
+            </li>
+
+          {% else %}
+            <!-- English navigation -->
+            {% for p in site.pages %}
+              {% if p.permalink == '/' %} {% assign about_title = p.title %} {% endif %}
+            {% endfor %}
+
+            <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
+              <a class="nav-link" href="{{ '/' | relative_url }}">
+                {{- about_title }}
+                {% if page.permalink == '/' %}
+                  <span class="sr-only">(current)</span>
+                {% endif %}
+              </a>
+            </li>
+
+            {% assign sorted_pages = site.pages | sort: 'nav_order' %}
+            {% for p in sorted_pages %}
+              {% if p.nav and p.autogen == null %}
+                {% if p.dropdown %}
+                  {% assign has_active_child = false %}
+                  {% for child in p.children %}
+                    {% if page.title == child.title %}
+                      {% assign has_active_child = true %}
+                    {% endif %}
+                  {% endfor %}
+                  <li class="nav-item dropdown {% if page.title == p.title or has_active_child %}active{% endif %}">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      {{- p.title }}
+                      {% if page.title == p.title or has_active_child %}
+                        <span class="sr-only">(current)</span>
+                      {% endif %}
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                      {% for child in p.children %}
+                        {% if child.title == 'divider' %}
+                          <div class="dropdown-divider"></div>
+                        {% else %}
+                          <a
+                            class="dropdown-item {% if page.title == child.title %}active{% endif %}"
+                            href="{% if child.permalink contains '://' %}{{ child.permalink }}{% else %}{{ child.permalink | relative_url }}{% endif %}"
+                          >
+                            {{- child.title -}}
+                          </a>
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+                  </li>
+                {% else %}
+                  {% assign parent_link = p.permalink | remove: 'index.html' %}
+                  <li class="nav-item {% if page.url contains parent_link %}active{% endif %}">
+                    {%- if p.permalink contains '://' -%}
+                      {%- assign url = p.permalink -%}
+                    {%- elsif p.permalink contains '/blog/' -%}
+                      {%- assign url = '/blog/' -%}
+                    {%- else -%}
+                      {%- assign url = p.url -%}
+                    {%- endif %}
+                    <a class="nav-link" href="{{ url | relative_url }}">
+                      {{- p.title }}
+                      {% if page.url contains p.url %}
+                        <span class="sr-only">(current)</span>
+                      {% endif %}
+                    </a>
+                  </li>
+                {% endif %}
               {% endif %}
-            </a>
+            {% endfor %}
+          {% endif %}
+
+          <!-- Language Switcher -->
+          <li class="nav-item lang-switcher">
+            <a class="lang-btn {% unless is_id %}lang-btn-active{% endunless %}" href="{{ en_url }}">EN</a>
+            <span class="lang-divider">·</span>
+            <a class="lang-btn {% if is_id %}lang-btn-active{% endif %}" href="{{ id_url }}">ID</a>
           </li>
 
-          <!-- Other pages -->
-          {% assign sorted_pages = site.pages | sort: 'nav_order' %}
-          {% for p in sorted_pages %}
-            {% if p.nav and p.autogen == null %}
-              {% if p.dropdown %}
-                {% assign has_active_child = false %}
-                {% for child in p.children %}
-                  {% if page.title == child.title %}
-                    {% assign has_active_child = true %}
-                  {% endif %}
-                {% endfor %}
-                <li class="nav-item dropdown {% if page.title == p.title or has_active_child %}active{% endif %}">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    {{- p.title }}
-                    {% if page.title == p.title or has_active_child %}
-                      <span class="sr-only">(current)</span>
-                    {% endif %}
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    {% for child in p.children %}
-                      {% if child.title == 'divider' %}
-                        <div class="dropdown-divider"></div>
-                      {% else %}
-                        <a
-                          class="dropdown-item {% if page.title == child.title %}active{% endif %}"
-                          href="{% if child.permalink contains '://' %}{{ child.permalink }}{% else %}{{ child.permalink | relative_url }}{% endif %}"
-                        >
-                          {{- child.title -}}
-                        </a>
-                      {% endif %}
-                    {% endfor %}
-                  </div>
-                </li>
-              {% else %}
-                {% assign parent_link = p.permalink | remove: 'index.html' %}
-                <li class="nav-item {% if page.url contains parent_link %}active{% endif %}">
-                  {%- if p.permalink contains '://' -%}
-                    {%- assign url = p.permalink -%}
-                  {%- elsif p.permalink contains '/blog/' -%}
-                    {%- assign url = '/blog/' -%}
-                  {%- else -%}
-                    {%- assign url = p.url -%}
-                  {%- endif %}
-                  <a class="nav-link" href="{{ url | relative_url }}">
-                    {{- p.title }}
-                    {% if page.url contains p.url %}
-                      <span class="sr-only">(current)</span>
-                    {% endif %}
-                  </a>
-                </li>
-              {% endif %}
-            {% endif %}
-          {% endfor %}
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">
@@ -119,7 +165,7 @@
             </li>
           {% endif %}
           {% if site.enable_darkmode %}
-            <!-- Toogle theme mode -->
+            <!-- Toggle theme mode -->
             <li class="toggle-container">
               <button id="light-toggle" title="Change theme">
                 <i class="ti ti-sun-moon" id="light-toggle-system"></i>
@@ -136,7 +182,7 @@
   <!-- Full-screen mobile nav overlay -->
   <div id="mobile-nav-overlay" class="mobile-nav-overlay" aria-hidden="true" role="dialog">
     <div class="mobile-nav-header">
-      <a class="mobile-nav-brand" href="{{ '/' | relative_url }}" onclick="closeMobileNav()">
+      <a class="mobile-nav-brand" href="{% if is_id %}/id/{% else %}{{ '/' | relative_url }}{% endif %}" onclick="closeMobileNav()">
         <span class="mobile-nav-brand-first">{{ site.first_name }}</span>&nbsp;{{ site.last_name }}
       </a>
       <button class="mobile-nav-close" onclick="closeMobileNav()" aria-label="Close menu">
@@ -145,33 +191,51 @@
     </div>
 
     <nav class="mobile-nav-links">
-      <a href="{{ '/' | relative_url }}"
-         class="mobile-nav-link {% if page.permalink == '/' %}active{% endif %}"
-         onclick="closeMobileNav()">
-        {{- about_title -}}
-      </a>
-      {% for p in sorted_pages %}
-        {% if p.nav and p.autogen == null %}
-          {% unless p.dropdown %}
-            {%- if p.permalink contains '://' -%}
-              {%- assign murl = p.permalink -%}
-            {%- elsif p.permalink contains '/blog/' -%}
-              {%- assign murl = '/blog/' -%}
-            {%- else -%}
-              {%- assign murl = p.url -%}
-            {%- endif %}
-            {% assign parent_link = p.permalink | remove: 'index.html' %}
-            <a href="{{ murl | relative_url }}"
-               class="mobile-nav-link {% if page.url contains parent_link %}active{% endif %}"
-               onclick="closeMobileNav()">
-              {{- p.title -}}
-            </a>
-          {% endunless %}
-        {% endif %}
-      {% endfor %}
+      {% if is_id %}
+        <!-- Indonesian mobile nav -->
+        <a href="/id/" class="mobile-nav-link {% if page.url == '/id/' %}active{% endif %}" onclick="closeMobileNav()">Tentang</a>
+        <a href="/publications/" class="mobile-nav-link" onclick="closeMobileNav()">Publikasi</a>
+        <a href="/id/projects/" class="mobile-nav-link {% if page.url contains '/id/projects/' %}active{% endif %}" onclick="closeMobileNav()">Proyek</a>
+        <a href="/id/blog/" class="mobile-nav-link {% if page.url contains '/id/blog/' %}active{% endif %}" onclick="closeMobileNav()">Catatan</a>
+        <a href="/assets/pdf/DinoArla_Vitae_0526.pdf" class="mobile-nav-link">CV</a>
+        <a href="/id/calendar/" class="mobile-nav-link {% if page.url contains '/id/calendar/' %}active{% endif %}" onclick="closeMobileNav()">Kalender</a>
+      {% else %}
+        <!-- English mobile nav -->
+        {% assign sorted_pages = site.pages | sort: 'nav_order' %}
+        <a href="{{ '/' | relative_url }}"
+           class="mobile-nav-link {% if page.permalink == '/' %}active{% endif %}"
+           onclick="closeMobileNav()">
+          {{- about_title -}}
+        </a>
+        {% for p in sorted_pages %}
+          {% if p.nav and p.autogen == null %}
+            {% unless p.dropdown %}
+              {%- if p.permalink contains '://' -%}
+                {%- assign murl = p.permalink -%}
+              {%- elsif p.permalink contains '/blog/' -%}
+                {%- assign murl = '/blog/' -%}
+              {%- else -%}
+                {%- assign murl = p.url -%}
+              {%- endif %}
+              {% assign parent_link = p.permalink | remove: 'index.html' %}
+              <a href="{{ murl | relative_url }}"
+                 class="mobile-nav-link {% if page.url contains parent_link %}active{% endif %}"
+                 onclick="closeMobileNav()">
+                {{- p.title -}}
+              </a>
+            {% endunless %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
     </nav>
 
     <div class="mobile-nav-actions">
+      <!-- Language switcher in mobile overlay -->
+      <div class="mobile-lang-switcher">
+        <a class="mobile-lang-btn {% unless is_id %}mobile-lang-active{% endunless %}" href="{{ en_url }}" onclick="closeMobileNav()">EN</a>
+        <span class="mobile-lang-divider">·</span>
+        <a class="mobile-lang-btn {% if is_id %}mobile-lang-active{% endif %}" href="{{ id_url }}" onclick="closeMobileNav()">ID</a>
+      </div>
       {% if site.search_enabled %}
         <button class="mobile-nav-action-btn" onclick="closeMobileNav(); setTimeout(openSearchModal, 300);" aria-label="Search">
           <i class="ti ti-search"></i>
