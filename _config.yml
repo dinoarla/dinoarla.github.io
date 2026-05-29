@@ -85,7 +85,7 @@ bing_site_verification: E82A9581AA92D82B729A4A542F24EA7C
 # -----------------------------------------------------------------------------
 
 blog_name: Dino Notes # blog_name will be displayed in your blog page
-blog_description: The buzz stops here 
+blog_description: Reflections on research, teaching, and applied machine learning in energy systems. 
 lsi: false # produce an index for related posts
 
 # Pagination

@@ -573,16 +573,23 @@ html[data-theme="dark"] .navbar {
   }
 }
 
-// ─── Publications container top-margin reset ──────────────────────────────────
+// ─── Page container top margin — reduce Bootstrap mt-5 (3rem) ────────────────
 
-.publications {
+.container.mt-5 {
+  margin-top: 1rem !important;
+}
+
+// ─── Publications / projects container top-margin reset ───────────────────────
+
+.publications,
+.projects {
   margin-top: 0 !important;
 }
 
 // ─── Tag / category list — pill badge style ──────────────────────────────────
 
 .tag-category-list {
-  padding-top: 0.75rem !important;
+  padding-top: 0.5rem !important;
 
   ul {
     display: flex !important;
@@ -596,28 +603,37 @@ html[data-theme="dark"] .navbar {
   // Hide bullet separators
   p { display: none !important; }
 
+  // Style the li itself as the pill so it wraps both the icon and link text
   li {
     list-style: none;
     display: inline-flex !important;
-    padding: 0 !important;
+    align-items: center;
+    gap: 0.2rem;
+    padding: 0.22rem 0.7rem !important;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 500;
+    border: 1px solid var(--global-theme-color);
+    color: var(--global-theme-color) !important;
+    transition: background 0.2s, color 0.2s;
+    cursor: pointer;
+
+    i {
+      font-size: 0.7rem;
+      color: var(--global-theme-color);
+    }
 
     a {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.25rem;
-      padding: 0.22rem 0.7rem;
-      border-radius: 20px;
-      font-size: 0.78rem;
-      font-weight: 500;
-      border: 1px solid var(--global-theme-color);
       color: var(--global-theme-color) !important;
       text-decoration: none !important;
-      transition: background 0.2s, color 0.2s;
+      line-height: 1;
+    }
 
-      &:hover {
-        background: var(--global-theme-color);
-        color: #fff !important;
-      }
+    &:hover {
+      background: var(--global-theme-color);
+      color: #fff !important;
+
+      i, a { color: #fff !important; }
     }
   }
 }

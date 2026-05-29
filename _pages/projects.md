@@ -13,7 +13,7 @@ horizontal: false
 <div class="header-bar-v2">
     <p class="header-eyebrow">Work</p>
     <h1>Projects</h1>
-    <h2>Somewhere, something incredible is waiting to be known</h2>
+    <h2>Operational systems and research prototypes built for real-world impact in energy analytics and data intelligence.</h2>
   </div>
 
 {% if site.enable_project_categories and page.display_categories %}

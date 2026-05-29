@@ -13,7 +13,7 @@ nav_order: 1
   <div class="header-bar-v2">
     <p class="header-eyebrow">Research</p>
     <h1>Publications</h1>
-    <h2>Nothing in science has any value to society if it is not communicated</h2>
+    <h2>Peer-reviewed work in machine learning, smart grid analytics, and large-scale energy systems.</h2>
   </div>
 
   <div class="pub-toolbar">
