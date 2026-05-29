@@ -43,14 +43,18 @@
         {% assign extra = yr_count | minus: 3 %}
         {% if extra > 0 %}
           <button class="notes-show-more" onclick="notesShowMore(this)">
-            Show {{ extra }} more from {{ year }}
+            {% if page.lang == 'id' %}Tampilkan {{ extra }} lagi dari {{ year }}{% else %}Show {{ extra }} more from {{ year }}{% endif %}
           </button>
         {% endif %}
       </div>
     {% endfor %}
 
     <div class="notes-footer">
-      <a href="{{ '/blog/' | relative_url }}" class="notes-view-all">View all notes &rarr;</a>
+      {% if page.lang == 'id' %}
+        <a href="/id/blog/" class="notes-view-all">Lihat semua catatan &rarr;</a>
+      {% else %}
+        <a href="{{ '/blog/' | relative_url }}" class="notes-view-all">View all notes &rarr;</a>
+      {% endif %}
     </div>
   {% else %}
     <p>No posts so far...</p>

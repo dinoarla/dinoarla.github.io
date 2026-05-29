@@ -4,16 +4,6 @@ permalink: /id/blog/
 title: Catatan
 lang: id
 nav: false
-pagination:
-  enabled: true
-  collection: posts
-  permalink: /id/blog/page/:num/
-  per_page: 5
-  sort_field: date
-  sort_reverse: true
-  trail:
-    before: 1
-    after: 3
 ---
 
 <div class="post">
@@ -26,13 +16,7 @@ pagination:
 
   <ul class="post-list">
 
-    {% if page.pagination.enabled %}
-      {% assign postlist = paginator.posts %}
-    {% else %}
-      {% assign postlist = site.posts %}
-    {% endif %}
-
-    {% for post in postlist %}
+    {% for post in site.posts %}
 
     {% if post.external_source == blank %}
       {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
@@ -40,8 +24,6 @@ pagination:
       {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
     {% endif %}
     {% assign year = post.date | date: "%Y" %}
-    {% assign tags = post.tags | join: "" %}
-    {% assign categories = post.categories | join: "" %}
 
     <li>
 
@@ -97,9 +79,5 @@ pagination:
     {% endfor %}
 
   </ul>
-
-{% if page.pagination.enabled %}
-{% include pagination.liquid %}
-{% endif %}
 
 </div>
