@@ -10,7 +10,7 @@ nav_order: 5
   <div class="header-bar-v2">
     <p class="header-eyebrow">Schedule</p>
     <h1>Calendar</h1>
-    <h2>Book a meeting or a quick chat with me. Pick a time that works for you — it syncs with my calendar automatically.</h2>
+    <h2>Book a time to meet — pick a slot and it syncs with my calendar automatically.</h2>
   </div>
 
   <div

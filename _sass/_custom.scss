@@ -586,10 +586,18 @@ html[data-theme="dark"] .navbar {
   margin-top: 0 !important;
 }
 
+// ─── Fix .publications h1 centering from _base.scss ──────────────────────────
+
+.publications .header-bar-v2 h1 {
+  text-align: left !important;
+  margin-top: 0 !important;
+}
+
 // ─── Tag / category list — pill badge style ──────────────────────────────────
 
 .tag-category-list {
   padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
 
   ul {
     display: flex !important;
@@ -646,6 +654,7 @@ html[data-theme="dark"] .navbar {
   align-items: center;
   gap: 0.3rem;
   margin-top: 0.4rem !important;
+  margin-bottom: 0.6rem !important;
 }
 
 .post-tag-chip {
