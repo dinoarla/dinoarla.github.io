@@ -11,6 +11,7 @@ horizontal: false
 <!-- pages/projects.md -->
 <div class="projects">
 <div class="header-bar-v2">
+    <p class="header-eyebrow">Work</p>
     <h1>Projects</h1>
     <h2>Somewhere, something incredible is waiting to be known</h2>
   </div>

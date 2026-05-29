@@ -11,6 +11,7 @@ nav_order: 1
 <div class="publications" id="pub-container">
 
   <div class="header-bar-v2">
+    <p class="header-eyebrow">Research</p>
     <h1>Publications</h1>
     <h2>Nothing in science has any value to society if it is not communicated</h2>
   </div>
