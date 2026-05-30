@@ -128,6 +128,19 @@ html[data-theme="dark"] .navbar {
   }
 }
 
+// Remove focus ring and any border from theme toggle button
+#light-toggle {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+
+  &:focus,
+  &:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
 // ─── Selected Publications thumbnails ────────────────────────────────────────
 
 .selected-pub-grid {
