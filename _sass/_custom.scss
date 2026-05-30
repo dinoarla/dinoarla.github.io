@@ -141,6 +141,14 @@ html[data-theme="dark"] .navbar {
   }
 }
 
+// _themes.scss hardcodes padding-top:12px on each icon variant — override to keep it vertically centered
+#light-toggle-system,
+#light-toggle-dark,
+#light-toggle-light {
+  padding-top: 0 !important;
+  padding-left: 0 !important;
+}
+
 // ─── Selected Publications thumbnails ────────────────────────────────────────
 
 .selected-pub-grid {
