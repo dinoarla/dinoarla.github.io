@@ -14,9 +14,20 @@ layout: default
 
 {% assign url_beginning = page.url | slice: 0, 6 %}
 
+{% assign post_eyebrow = "Notes" %}
+{% if page.categories.first %}
+  {% assign post_eyebrow = page.categories.first | capitalize %}
+{% endif %}
+
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="header-bar-v2">
+      <p class="header-eyebrow">{{ post_eyebrow }}</p>
+      <h1>{{ page.title }}</h1>
+      {% if page.description %}
+        <h2>{{ page.description }}</h2>
+      {% endif %}
+    </div>
     <p class="post-meta">
       Created in {{ page.date | date: '%B %d, %Y' }}
       {% if page.author %}by {{ page.author }}{% endif %}

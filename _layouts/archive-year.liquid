@@ -3,8 +3,11 @@ layout: default
 ---
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title"><i class="fa-solid fa-calendar fa-sm"></i> {{ page.date | date: '%Y' }}</h1>
-    <p class="post-description">an archive of posts from this year</p>
+    <div class="header-bar-v2">
+      <p class="header-eyebrow">Archive</p>
+      <h1><i class="fa-solid fa-calendar fa-sm"></i> {{ page.date | date: '%Y' }}</h1>
+      <h2>An archive of posts from this year.</h2>
+    </div>
   </header>
 
   <article class="archive">
