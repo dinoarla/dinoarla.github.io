@@ -1,20 +1,20 @@
 ---
 layout: default
-permalink: /publications/
-title: Publications
+permalink: /innovation/
+title: Innovation
 lang: en
 nav: true
-nav_order: 1
+nav_order: 1.5
 ---
 
-<!-- _pages/publications.md -->
+<!-- _pages/innovation.md -->
 
 <div class="publications" id="pub-container">
 
   <div class="header-bar-v2">
     <p class="header-eyebrow">Research</p>
-    <h1>Publications</h1>
-    <h2>Peer-reviewed research in machine learning and smart grid analytics.</h2>
+    <h1>Innovation</h1>
+    <h2>Applied innovations and internal tools developed at PT PLN (Persero).</h2>
   </div>
 
   <div class="pub-toolbar">
@@ -28,7 +28,7 @@ nav_order: 1
     </div>
   </div>
 
-{% bibliography --query @*[abbr!=PLN Innovation]* %}
+{% bibliography --query @*[abbr=PLN Innovation]* %}
 
 </div>
 
