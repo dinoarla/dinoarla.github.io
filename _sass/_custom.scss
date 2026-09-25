@@ -2,6 +2,30 @@
  * Custom styles — dinoarla.github.io
  ******************************************************************************/
 
+// ─── Typography — Newsreader (display/headings) + Inter (body) ──────────────
+
+html,
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+  font-family: 'Newsreader', Georgia, 'Times New Roman', serif;
+}
+
 // ─── D. Hero — gradient name & profile glow ──────────────────────────────────
 
 // Gradient on first name "Dino"
@@ -983,4 +1007,56 @@ html[data-theme="dark"] .navbar {
   font-size: 0.6rem;
   color: var(--global-divider-color);
   pointer-events: none;
+}
+
+// ─── Footer — social row + centered copyright ────────────────────────────────
+
+footer.sticky-bottom {
+  .footer-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9rem;
+  }
+
+  .footer-social {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.2rem;
+      height: 2.2rem;
+      border-radius: 50%;
+      font-size: 1.05rem;
+      color: var(--global-text-color-light);
+      transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+
+      i::before {
+        color: inherit;
+      }
+
+      &:hover {
+        background: color-mix(in srgb, var(--global-theme-color) 10%, transparent);
+        color: var(--global-theme-color);
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  .footer-copy {
+    font-size: 0.8rem;
+    color: var(--global-text-color-light);
+
+    a {
+      color: var(--global-text-color-light);
+
+      &:hover {
+        color: var(--global-theme-color);
+      }
+    }
+  }
 }
