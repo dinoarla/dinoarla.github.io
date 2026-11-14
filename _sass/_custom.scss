@@ -546,11 +546,11 @@ html[data-theme="dark"] .navbar {
   }
 }
 
-// ─── Latest Notes list (about page) ──────────────────────────────────────────
+// ─── Latest Activity list (about page) ───────────────────────────────────────
 
 .latest-notes-list {
   .notes-year-group {
-    margin-top: 1.25rem;
+    margin-top: 1.75rem;
 
     &:first-child {
       margin-top: 0;
@@ -558,14 +558,14 @@ html[data-theme="dark"] .navbar {
   }
 
   .notes-year-header {
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--global-theme-color);
   }
 
   .notes-year-label {
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.07em;
     color: var(--global-theme-color);
   }
 
@@ -573,8 +573,8 @@ html[data-theme="dark"] .navbar {
   .notes-row {
     display: flex;
     align-items: baseline;
-    gap: 0.75rem;
-    padding: 0.44rem 0;
+    gap: 1.25rem;
+    padding: 0.7rem 0;
     border-top: 1px solid var(--global-divider-color);
 
     &.notes-row-hidden {
@@ -583,21 +583,21 @@ html[data-theme="dark"] .navbar {
   }
 
   .notes-date {
-    font-size: 0.88rem;
+    font-size: 0.92rem;
     color: var(--global-text-color-light);
     white-space: nowrap;
-    min-width: 52px;
+    min-width: 56px;
     flex-shrink: 0;
   }
 
   .notes-title {
-    font-size: 1rem;
-    color: var(--global-text-color);
+    font-size: 1.05rem;
+    color: var(--global-theme-color);
     text-decoration: none;
-    line-height: 1.4;
+    line-height: 1.5;
 
     &:hover {
-      color: var(--global-theme-color);
+      text-decoration: underline;
     }
   }
 

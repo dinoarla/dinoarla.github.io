@@ -151,6 +151,24 @@ span.cert-meta {
 }
 
 /*****************************
+ * Certifications page — full-width, larger titles
+ *****************************/
+
+.certifications-page {
+  .list-group {
+    width: 100%;
+  }
+
+  .list-group-table {
+    width: 100%;
+  }
+
+  td.list-group-name {
+    font-size: 0.95rem;
+  }
+}
+
+/*****************************
  * CV TOC styles
  *****************************/
 
