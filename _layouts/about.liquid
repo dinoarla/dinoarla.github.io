@@ -4,8 +4,8 @@ layout: default
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
+      <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+      {{ site.last_name }}
     </h1>
     <p class="desc">
       {% if page.typed_strings %}
@@ -16,7 +16,7 @@ layout: default
     </p>
   </header>
 
-  </br>
+  <br>
 
   <article>
     {% if page.profile %}
@@ -49,7 +49,11 @@ layout: default
     <!-- Selected Publications Thumbnails -->
     <div class="selected-papers-section mt-4 mb-5">
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit"><b>{% if page.lang == 'id' %}Publikasi Terpilih{% else %}Selected Publications{% endif %}</b></a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit"
+          ><b>
+            {%- if page.lang == 'id' %}Publikasi Terpilih{% else %}Selected Publications{% endif -%}
+          </b></a
+        >
       </h2>
       {% include selected_papers_thumbnails.liquid %}
     </div>
