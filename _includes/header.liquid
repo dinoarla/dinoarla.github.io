@@ -19,17 +19,17 @@
     <div class="container">
       {% if page.permalink != '/' and page.permalink != '/id/' %}
         <a class="navbar-brand title font-weight-lighter" href="{% if is_id %}/id/{% else %}{{ site.baseurl }}/{% endif %}">
-            {% if site.first_name %}
-              <span class="font-weight-bold">
-                {{- site.first_name -}}
-              </span>
-            {% endif %}
-            {% if site.middle_name %}
-              {{- site.middle_name -}}
-            {% endif %}
-            {% if site.last_name %}
-              {{- site.last_name -}}
-            {% endif %}
+          {% if site.first_name %}
+            <span class="font-weight-bold">
+              {{- site.first_name -}}
+            </span>
+          {% endif %}
+          {% if site.middle_name %}
+            {{- site.middle_name -}}
+          {% endif %}
+          {% if site.last_name %}
+            {{- site.last_name -}}
+          {% endif %}
         </a>
       {% elsif site.enable_navbar_social %}
         <!-- Social Icons -->
@@ -50,7 +50,6 @@
 
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
-
           {% if is_id %}
             <!-- Indonesian navigation -->
             <li class="nav-item {% if page.url == '/id/' %}active{% endif %}">
@@ -199,21 +198,39 @@
         <a href="/id/" class="mobile-nav-link {% if page.url == '/id/' %}active{% endif %}" onclick="closeMobileNav()">Tentang</a>
         <a href="/publications/" class="mobile-nav-link" onclick="closeMobileNav()">Publikasi</a>
         <a href="/innovation/" class="mobile-nav-link" onclick="closeMobileNav()">Inovasi</a>
-        <a href="/id/projects/" class="mobile-nav-link {% if page.url contains '/id/projects/' %}active{% endif %}" onclick="closeMobileNav()">Proyek</a>
+        <a href="/id/projects/" class="mobile-nav-link {% if page.url contains '/id/projects/' %}active{% endif %}" onclick="closeMobileNav()"
+          >Proyek</a
+        >
         <a href="/id/blog/" class="mobile-nav-link {% if page.url contains '/id/blog/' %}active{% endif %}" onclick="closeMobileNav()">Catatan</a>
         <a href="/assets/pdf/DinoArla_Vitae.pdf" class="mobile-nav-link">CV</a>
-        <a href="/id/calendar/" class="mobile-nav-link {% if page.url contains '/id/calendar/' %}active{% endif %}" onclick="closeMobileNav()">Kalender</a>
+        <a href="/id/calendar/" class="mobile-nav-link {% if page.url contains '/id/calendar/' %}active{% endif %}" onclick="closeMobileNav()"
+          >Kalender</a
+        >
       {% else %}
         <!-- English mobile nav -->
         {% assign sorted_pages = site.pages | sort: 'nav_order' %}
-        <a href="{{ '/' | relative_url }}"
-           class="mobile-nav-link {% if page.permalink == '/' %}active{% endif %}"
-           onclick="closeMobileNav()">
+        <a
+          href="{{ '/' | relative_url }}"
+          class="mobile-nav-link {% if page.permalink == '/' %}active{% endif %}"
+          onclick="closeMobileNav()"
+        >
           {{- about_title -}}
         </a>
         {% for p in sorted_pages %}
           {% if p.nav and p.autogen == null %}
-            {% unless p.dropdown %}
+            {% if p.dropdown %}
+              {% for child in p.children %}
+                {% unless child.title == 'divider' %}
+                  <a
+                    href="{% if child.permalink contains '://' %}{{ child.permalink }}{% else %}{{ child.permalink | relative_url }}{% endif %}"
+                    class="mobile-nav-link {% if page.title == child.title %}active{% endif %}"
+                    onclick="closeMobileNav()"
+                  >
+                    {{- child.title -}}
+                  </a>
+                {% endunless %}
+              {% endfor %}
+            {% else %}
               {%- if p.permalink contains '://' -%}
                 {%- assign murl = p.permalink -%}
               {%- elsif p.permalink contains '/blog/' -%}
@@ -222,12 +239,14 @@
                 {%- assign murl = p.url -%}
               {%- endif %}
               {% assign parent_link = p.permalink | remove: 'index.html' %}
-              <a href="{{ murl | relative_url }}"
-                 class="mobile-nav-link {% if page.url contains parent_link %}active{% endif %}"
-                 onclick="closeMobileNav()">
+              <a
+                href="{{ murl | relative_url }}"
+                class="mobile-nav-link {% if page.url contains parent_link %}active{% endif %}"
+                onclick="closeMobileNav()"
+              >
                 {{- p.title -}}
               </a>
-            {% endunless %}
+            {% endif %}
           {% endif %}
         {% endfor %}
       {% endif %}
@@ -266,7 +285,7 @@
       overlay.setAttribute('aria-hidden', 'true');
       document.body.style.overflow = '';
     }
-    document.addEventListener('keydown', function(e) {
+    document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') closeMobileNav();
     });
   </script>

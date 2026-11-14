@@ -3,7 +3,7 @@ layout: default
 permalink: /certifications/
 title: Certifications
 lang: en
-nav: true
+nav: false
 nav_order: 4.5
 ---
 
