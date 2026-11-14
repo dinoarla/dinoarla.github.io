@@ -1,0 +1,72 @@
+<div class="latest-activity-list">
+  {% if site.news != blank %}
+    {% assign all_items = site.news | sort: 'date' | reverse %}
+    {% if site.announcements.limit %}
+      {% assign items_limit = site.announcements.limit %}
+    {% else %}
+      {% assign items_limit = all_items.size %}
+    {% endif %}
+    {% assign shown_items = all_items | limit: items_limit %}
+
+    {% assign years = '' | split: '|' %}
+    {% for item in shown_items %}
+      {% assign yr = item.date | date: '%Y' %}
+      {% unless years contains yr %}
+        {% assign years = years | push: yr %}
+      {% endunless %}
+    {% endfor %}
+
+    {% for year in years %}
+      <div class="notes-year-group">
+        <div class="notes-year-header">
+          <span class="notes-year-label">{{ year }}</span>
+        </div>
+
+        {% assign yr_count = 0 %}
+        {% for item in shown_items %}
+          {% assign item_year = item.date | date: '%Y' %}
+          {% if item_year == year %}
+            {% assign yr_count = yr_count | plus: 1 %}
+            <div class="notes-row{% if yr_count > 3 %} notes-row-hidden{% endif %}">
+              <span class="notes-date">{{ item.date | date: '%b %d' }}</span>
+              <div class="notes-content">
+                {% if item.inline %}
+                  {{ item.content | emojify }}
+                {% else %}
+                  <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+
+        {% assign extra = yr_count | minus: 3 %}
+        {% if extra > 0 %}
+          <button class="notes-show-more" onclick="notesShowMore(this)">
+            {% if page.lang == 'id' %}Tampilkan {{ extra }} lagi dari {{ year }}{% else %}Show {{ extra }} more from {{ year }}{% endif %}
+          </button>
+        {% endif %}
+      </div>
+    {% endfor %}
+
+    <div class="notes-footer">
+      {% if page.lang == 'id' %}
+        <a href="/news/" class="notes-view-all">Lihat semua aktivitas &rarr;</a>
+      {% else %}
+        <a href="{{ '/news/' | relative_url }}" class="notes-view-all">View all activity &rarr;</a>
+      {% endif %}
+    </div>
+  {% else %}
+    <p>No activity so far...</p>
+  {% endif %}
+</div>
+
+<script>
+  function notesShowMore(btn) {
+    var group = btn.closest('.notes-year-group');
+    group.querySelectorAll('.notes-row-hidden').forEach(function (row) {
+      row.classList.remove('notes-row-hidden');
+    });
+    btn.style.display = 'none';
+  }
+</script>

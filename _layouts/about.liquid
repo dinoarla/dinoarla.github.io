@@ -61,15 +61,15 @@ layout: default
     <hr>
 
     <!-- Latest activity -->
-    {% if site.latest_posts.enabled %}
+    {% if site.announcements.enabled %}
       <h2>
         {% if page.lang == 'id' %}
-          <a href="/id/blog/" style="color: inherit"><b>Aktivitas Terbaru</b></a>
+          <a href="/news/" style="color: inherit"><b>Aktivitas Terbaru</b></a>
         {% else %}
-          <a href="{{ '/blog/' | relative_url }}" style="color: inherit"><b>Latest Activity</b></a>
+          <a href="{{ '/news/' | relative_url }}" style="color: inherit"><b>Latest Activity</b></a>
         {% endif %}
       </h2>
-      {% include latest_posts.liquid %}
+      {% include latest_activity.liquid %}
     {% endif %}
 
     <!-- Social -->

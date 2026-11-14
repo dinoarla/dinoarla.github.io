@@ -548,7 +548,7 @@ html[data-theme="dark"] .navbar {
 
 // ─── Latest Activity list (about page) ───────────────────────────────────────
 
-.latest-notes-list {
+.latest-activity-list {
   .notes-year-group {
     margin-top: 1.75rem;
 
@@ -590,14 +590,22 @@ html[data-theme="dark"] .navbar {
     flex-shrink: 0;
   }
 
-  .notes-title {
+  .notes-content {
     font-size: 1.05rem;
-    color: var(--global-theme-color);
-    text-decoration: none;
+    color: var(--global-text-color);
     line-height: 1.5;
 
-    &:hover {
-      text-decoration: underline;
+    p {
+      margin: 0;
+    }
+
+    a {
+      color: var(--global-theme-color);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
