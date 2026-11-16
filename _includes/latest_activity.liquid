@@ -1,12 +1,6 @@
 <div class="latest-activity-list">
   {% if site.news != blank %}
-    {% assign all_items = site.news | sort: 'date' | reverse %}
-    {% if site.announcements.limit %}
-      {% assign items_limit = site.announcements.limit %}
-    {% else %}
-      {% assign items_limit = all_items.size %}
-    {% endif %}
-    {% assign shown_items = all_items | limit: items_limit %}
+    {% assign shown_items = site.news | sort: 'date' | reverse %}
 
     {% assign years = '' | split: '|' %}
     {% for item in shown_items %}
@@ -17,17 +11,15 @@
     {% endfor %}
 
     {% for year in years %}
-      <div class="notes-year-group">
+      <div class="notes-year-group{% unless forloop.first %} notes-year-hidden{% endunless %}">
         <div class="notes-year-header">
           <span class="notes-year-label">{{ year }}</span>
         </div>
 
-        {% assign yr_count = 0 %}
         {% for item in shown_items %}
           {% assign item_year = item.date | date: '%Y' %}
           {% if item_year == year %}
-            {% assign yr_count = yr_count | plus: 1 %}
-            <div class="notes-row{% if yr_count > 3 %} notes-row-hidden{% endif %}">
+            <div class="notes-row">
               <span class="notes-date">{{ item.date | date: '%b %d' }}</span>
               <div class="notes-content">
                 {% if item.inline %}
@@ -39,15 +31,19 @@
             </div>
           {% endif %}
         {% endfor %}
-
-        {% assign extra = yr_count | minus: 3 %}
-        {% if extra > 0 %}
-          <button class="notes-show-more" onclick="notesShowMore(this)">
-            {% if page.lang == 'id' %}Tampilkan {{ extra }} lagi dari {{ year }}{% else %}Show {{ extra }} more from {{ year }}{% endif %}
-          </button>
-        {% endif %}
       </div>
     {% endfor %}
+
+    {% if years.size > 1 %}
+      <div class="notes-year-toggle">
+        <button class="notes-show-more" onclick="activityShowNextYear(this)" data-lang="{{ page.lang }}">
+          {% if page.lang == 'id' %}Tampilkan {{ years[1] }}{% else %}Show {{ years[1] }}{% endif %}
+        </button>
+        <button class="notes-show-less" onclick="activityShowLess(this)" data-lang="{{ page.lang }}" style="display: none">
+          {% if page.lang == 'id' %}Tampilkan lebih sedikit{% else %}Show less{% endif %}
+        </button>
+      </div>
+    {% endif %}
 
     <div class="notes-footer">
       {% if page.lang == 'id' %}
@@ -62,11 +58,37 @@
 </div>
 
 <script>
-  function notesShowMore(btn) {
-    var group = btn.closest('.notes-year-group');
-    group.querySelectorAll('.notes-row-hidden').forEach(function (row) {
-      row.classList.remove('notes-row-hidden');
+  function activityShowNextYear(btn) {
+    var container = btn.closest('.latest-activity-list');
+    var hidden = container.querySelectorAll('.notes-year-hidden');
+    if (hidden.length === 0) return;
+
+    hidden[0].classList.remove('notes-year-hidden');
+    var remaining = container.querySelectorAll('.notes-year-hidden');
+    var lessBtn = container.querySelector('.notes-show-less');
+    lessBtn.style.display = 'inline-block';
+
+    if (remaining.length === 0) {
+      btn.style.display = 'none';
+    } else {
+      var nextYear = remaining[0].querySelector('.notes-year-label').textContent;
+      btn.textContent = (btn.dataset.lang === 'id' ? 'Tampilkan ' : 'Show ') + nextYear;
+    }
+  }
+
+  function activityShowLess(btn) {
+    var container = btn.closest('.latest-activity-list');
+    var groups = container.querySelectorAll('.notes-year-group');
+    groups.forEach(function (group, i) {
+      if (i > 0) group.classList.add('notes-year-hidden');
     });
+
+    var moreBtn = container.querySelector('.notes-show-more');
+    if (groups.length > 1) {
+      var nextYear = groups[1].querySelector('.notes-year-label').textContent;
+      moreBtn.textContent = (moreBtn.dataset.lang === 'id' ? 'Tampilkan ' : 'Show ') + nextYear;
+      moreBtn.style.display = 'inline-block';
+    }
     btn.style.display = 'none';
   }
 </script>
